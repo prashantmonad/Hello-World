@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyForm</title>
+</head>
+<body>
+<form action="print.php" method="post">
+    <fieldset>
+        <legend> Employee</legend>
+    <label>First name</label>
+    <input type="text" name="firstname" id="firstname"><br><br>
+    <label>Last name</label>
+    <input type="text" name="lstname" id="lastname"><br><br>
+    <label>Gender</label>
+
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+    <select name="city">
+        <option >Select</option>
+        <option value="ngar">Nagar</option>
+        <option value="pune">Pune</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="nashik">Nashik</option>
+    </select>
+        <p>Hold down the Ctrl button to select multiple options below.</p>
+        <select name="interest" multiple>
+            <option >Select</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">JAVA</option>
+            <option value="php">PHP</option>
+        </select>
+        <br>
+        <textarea name="message" rows="10" cols="30" placeholder="Type something about yourself" ></textarea>
+
+
+
+        <br><br>
+    <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+
+</body>
+</html>

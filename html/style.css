@@ -1,14 +1,14 @@
 body {
-  background-color: powderblue;
+  background-color: powderskyblue;
 }
 h1 {
-  color: blue;
+  color: skyblue;
 }
 p {
   color: red;
 }
 h1 {
-  color: blue;
+  color: skyblue;
   font-family: verdana;
   font-size: 150%;
 }
@@ -16,7 +16,7 @@ p {
   border: 1px solid powderred;
 }
 p {
-  border: 1px solid powderblue;
+  border: 1px solid powderskyblue;
   padding: 30px;
 }
 #para {
@@ -45,8 +45,9 @@ list-style-type: none;
 }
 
 li{
-float: right;
+float: left;
 padding:10px;
+  color: white;
 }
 div{
 background-color:black;
@@ -65,7 +66,7 @@ border:show;
 margin:right;
 }
 span{
-  color:blue;
+  color:skyblue;
 }
 header {
   background-color: #666;
@@ -73,6 +74,17 @@ header {
   text-align: left;
   font-size: 25px;
   color: white;
+}
+
+nav{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+fieldset{
+  border: aqua;
 }
 
 
