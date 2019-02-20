@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>MyForm</title>
+    <!--<link rel="stylesheet" href="style.css">-->
 </head>
 <body>
-<form action="print.php" method="post">
+<form action="login.html" method="post">
     <fieldset>
         <legend> Employee</legend>
     <label>First name</label>
@@ -36,12 +37,39 @@
         <br>
         <textarea name="message" rows="10" cols="30" placeholder="Type something about yourself" ></textarea>
 
+        <br><br>
+        <label>College</label>
+        <input list="college" name="college">
+        <datalist id="college">
+            <option value="JSPM">
+            <option value="MIT">
+            <option value="COEP">
+            <option value="AISSM">
+            <option value="IIT">
+            <option value="PCCCOE">
+            <option value="RMD">
+        </datalist>
+        <br><br>
+        <label>Birthdate</label>
+        <input type="date" name="birthdate" value="birthdate" min="1990-12-31" max="2000-12-31" ><br>   <br>
+        <label><Email></Email></label>
+        <input type="email" name="email">   <br><br>
+        <label>Resume : </label>
+        <input type="file" name="resume"><br><br>
+        <input type="checkbox" name="agree">agree   <br><br>
+        <input type="text" name="readonly" value="readonly" readonly><br><br>
+        <input type="text" name="disable" value="disabled" disabled><br><br>
+        <input type="tex" name="size" value="poiuqwerasdfa" size="30"
 
 
         <br><br>
-    <input type="submit" value="Submit">
+        <button type="submit"  onclick="alert('Are you sure !')">Accept and Submit</button>
+        <input type="submit" formaction="print.php" value="As a Admin">
+        <input type="submit" formenctype="multipart/form-data" value="multipart form">
+
     </fieldset>
 </form>
+
 
 
 </body>
