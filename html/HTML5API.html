@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML API</title>
+
+    <link rel="stylesheet" href="StyleHtml5.css">
+</head>
+<body>
+
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+
+</script>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+<img id="drag1" src="videos/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+<h2>hiiiiiii</h2>
+<div id="result"></div>
+<div id="resul"></div>
+<script>
+    localStorage.setItem("name", "Prashant");
+    localStorage.setItem("lastname", "Ghodeswar");
+
+    document.getElementById("result").innerHTML = localStorage.getItem("name");
+
+    document.getElementById("resul").innerHTML = localStorage.getItem("lastname");
+
+</script>
+
+<script>
+    function clickCounter() {
+
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        }
+        else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result1").innerHTML = "You clicked " + localStorage.clickcount + " times";
+
+    }
+</script>
+
+
+<button type="button" onclick="clickCounter()">Count</button>
+<div id="result1"></div>
+</body>
+</html>
