@@ -62,3 +62,112 @@ div{
 
 
 }
+p{
+    border-style: solid;
+    border-color: blue;
+    display: inline;
+    padding: 20px;
+    outline: 3px dashed orange ;
+}
+
+p.excl{
+    border-style:none;
+    border-color: none;
+    display: block;
+    padding:none;
+    outline: none ;
+}
+
+a:link{
+    color:blue;
+}
+a:visited{
+    color:pink;
+}
+a:hover{
+    color:deeppink;
+}
+a:active{
+    color:greenyellow;
+}
+
+
+table {
+    border: 1px solid red;
+    width: 50%;
+    empty-cells: hide;
+}
+
+th {
+    background-color: aqua;
+    color: white;
+}
+tr:nth-child(even) {background-color: aquamarine;}
+tr:hover {background-color: yellowgreen;}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+div.fixed{
+    all: initial;
+    position: fixed;
+    background-color: unset;
+    border: unset;
+    TOP: 0;
+    right: 0;
+    border-style:none;
+    border-color: none;
+
+
+}
+#overflowTest{
+
+    color: white;
+    padding: 15px;
+    width: 550%;
+    height: 100px;
+    overflow: scroll;
+    }
+div.id:hover{
+    background-color: purple;
+
+}
+
+h4 {
+    all: initial;
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover h4 {
+    display: block;
+}
+.fm{
+
+    all: initial;
+    color:black;
+    font-variant: small-caps;
+}
+img{
+
+    opacity:0.5;
+    filter: alpha(opacity=50);
+}
+img:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+img.im{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+img.im:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
