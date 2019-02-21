@@ -1,0 +1,64 @@
+
+body{
+    background-color: whitesmoke;
+    background-image: url("images/backgound.jpg");
+    background-repeat: repeat-x;
+    background-position: right bottom;
+    background-attachment: fixed;
+
+
+
+}
+
+p.dotted{
+    border-style: dotted;
+}
+p.solid{
+    border-style: solid;
+}
+h1.dashed{
+    border-style: dashed;
+    border-width:5px;
+    border-color: aquamarine;
+}
+#double{
+    border-style: double;
+}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    border-radius: 45px;
+}
+div{
+    border-style: solid;
+    border-width: 1px;
+    color: blue;
+    background-color: red;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 400px;
+    padding: 25px 50px 80px 100px;
+    /*height: auto;*/
+    /*width: auto;*/
+    max-width: 500px;
+
+
+}
+#myDiv{
+    padding: 40px 50px 75px 100px;
+    color: red;
+    background-color: yellow;
+    border: 25px solid green;
+    margin: 0px 50px 0px 900px;
+
+
+}

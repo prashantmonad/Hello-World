@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcoe to CSS </title>
+    <link rel="stylesheet" href="StartCSS.css">
+    <style>
+        body{
+            /*/background-color: aliceblue;*/
+            /*!*background-image: url("images/img_pink_flowers.jpg");*! internal Style shit*/
+
+        }
+
+    </style>
+</head>
+<body>
+<h1 style="background-color:aquamarine;color: red">Welcome to CSS</h1>
+<p style="background-color: aqua;color: blue">This is my CSS paragraph</p>
+<br>
+<p style="color: mediumpurple">This is my CSS paragraph with mediumpurple color</p>
+
+<h1 style="border: 5px solid blue;">H1 heading with border</h1>
+<h1 style="border: 2px solid Tomato;">Heading wiht border color red</h1>
+
+<form action="login.html" method="post">
+    <fieldset>
+        <legend> Employee</legend>
+        <label>First name</label>
+        <input type="text" name="firstname" id="firstname"><br><br>
+        <label>Last name</label>
+        <input type="text" name="lstname" id="lastname"><br><br>
+        <label>Gender</label>
+
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br><br>
+
+        <select name="city">
+            <option >Select</option>
+            <option value="ngar">Nagar</option>
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="nashik">Nashik</option>
+        </select>
+        <p>Hold down the Ctrl button to select multiple options below.</p>
+        <select name="interest" multiple>
+            <option >Select</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">JAVA</option>
+            <option value="php">PHP</option>
+        </select>
+        <br>
+        <textarea name="message" rows="10" cols="30" placeholder="Type something about yourself" ></textarea>
+
+        <br><br>
+        <label>College</label>
+        <input list="college" name="college">
+        <datalist id="college">
+            <option value="JSPM">
+            <option value="MIT">
+            <option value="COEP">
+            <option value="AISSM">
+            <option value="IIT">
+            <option value="PCCCOE">
+            <option value="RMD">
+        </datalist>
+        <br><br>
+        <label>Birthdate</label>
+        <input type="date" name="birthdate" value="birthdate" min="1990-12-31" max="2000-12-31" ><br>   <br>
+        <label><Email></Email></label>
+        <input type="email" name="email">   <br><br>
+        <label>Resume : </label>
+        <input type="file" name="resume"><br><br>
+        <input type="checkbox" name="agree">agree   <br><br>
+        <input type="text" name="readonly" value="readonly" readonly><br><br>
+        <input type="text" name="disable" value="disabled" disabled><br><br>
+        <input type="tex" name="size" value="poiuqwerasdfa" size="30"
+
+
+        <br><br>
+        <button type="submit"  onclick="alert('Are you sure !')">Accept and Submit</button>
+        <input type="submit" formaction="print.php" value="As a Admin">
+        <input type="submit" formenctype="multipart/form-data" value="multipart form">
+
+    </fieldset>
+</form>
+<h1 class="dashed">A dashed border with header.</h1>
+<br><br>
+<p class="dotted">A dotted border.</p>
+
+<p class="solid">A solid border.</p>
+<p id="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+
+<div>
+    <p> This is div block with  margins and padding </p>
+</div>
+
+<div id="myDiv">
+    <p> This is div block with  margins and padding </p>
+</div>
+
+<p id="10">Outline paragraph</p>
+
+
+</body>
+</html>
