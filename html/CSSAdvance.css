@@ -1,0 +1,230 @@
+#rconrner{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 50px / 15px;
+    background-color: #4CAF50;
+}
+#rconrner1{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+#rconrner2{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px 50px;;
+    background-color: #4CAF50;
+}
+#borderimg1 {
+    border: 25px solid transparent;
+    padding: 15px;
+    border-image: url(index.png) 50 round;
+}
+
+#borderimg2 {
+    border: 25px solid transparent;
+    padding: 15px;
+    border-image: url(index.png) 20% round;
+}
+
+#borderimg3 {
+    border: 25px solid transparent;
+    padding: 15px;
+    border-image: url(index.png) 30% round;
+}
+#multiback{
+    background-image: url(images/backgound.jpg), url(images/sky.jpeg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+#backclip {
+    border: 10px dotted black;
+    padding:35px;
+    background: yellow;
+    background-clip: padding-box;
+}
+#grad1{
+    height: 100px;
+    background-image: linear-gradient(red,yellow);
+}
+#grad2{
+    height: 100px;
+    background-image: linear-gradient(to right,red,yellow);
+}
+#grad3{
+    height: 100px;
+    background-image: linear-gradient(to bottom left,red,yellow);
+}
+#grad4{
+    height: 100px;
+    background-image: linear-gradient(blue,red,green);
+}
+#gradredial{
+    height: 100px;
+    background-image: radial-gradient(blue,red,green);
+}
+h1{
+    color: blue;
+    text-shadow:2px 2px 4px green,0 0 25px red;
+
+}
+
+
+#rotate{
+    background-color: #cae8ca;
+    transform: rotate(20deg);
+    position: absolute;
+}
+#skew{
+    background-color: #cae8ca;
+    transform: skew(20deg);
+    position: absolute;
+}
+#rota {
+    transform: rotateZ(90deg);
+}
+#transition{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    float: top;
+}
+#transition:hover{
+    width: 300px;
+    height: 500px;
+}
+#animation{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 15s;
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+#animation2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+    }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+img.radius{
+    border-radius: 50%;
+}
+img.fit{
+    object-fit: cover;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.shadow {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.hovershadow:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.pagination{
+    display: inline-block;
+}
+.pagination a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a.active {
+    background-color: skyblue;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: yellowgreen;
+}
+.colcount{
+
+    column-count: 4;
+    /*column-rule-style: solid;*/
+    /*column-rule-width: 1px;*/
+    /*column-rule-color: lightblue;*/
+    column-rule: solid 5px lightblue;
+}
+#resize{
+    resize: both;
+    overflow: auto;
+}
+#nonresize{
+    resize: none;
+}
+:root{
+    --main-bg-color : red;
+    --main-txt-color: blue;
+}
+#p1{
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+.flex{
+    display: flex;
+    background-color: skyblue;
+    flex-direction: column;
+
+}
+.flex > div {
+    background-color: red;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+
+}

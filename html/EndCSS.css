@@ -1,0 +1,44 @@
+.dropbtn {
+    background-color: aqua;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: cornflowerblue;
+}
+a[target] {
+    background-color: red;
+}
+[class$="test"] {
+    background: yellow;
+}
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+}

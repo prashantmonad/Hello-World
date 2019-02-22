@@ -86,6 +86,14 @@ nav{
 fieldset{
   border: aqua;
 }
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
 
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
 
 

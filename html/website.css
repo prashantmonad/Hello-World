@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+body {
+
+    margin: 0;
+}
+.header {
+    padding: 60px;
+    text-align: center;
+    background: deepskyblue;
+    color: white;
+}
+.navbar {
+    display: flex;
+    background-color: grey;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.img {
+    background-color: lightgray;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
