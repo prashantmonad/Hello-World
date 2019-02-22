@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+}
+.header{
+    background-color: deepskyblue;
+    padding: 10px;
+    color: #cccccc;
+
+}
+[class*="menu"] {
+    float: left;
+    padding: 15px;
+}
+.menu ul{
+    padding: 0px;
+    margin: 0;
+}
+
+.menu li{
+    padding: 10px;
+    color: #f1f1f1;
+    background-color: lightblue;
+}
+
+.grid-container{
+    display: grid;
+    color: deepskyblue;
+    background-color: #f1f1f1;
+    padding: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+}
+.grid-container > div{
+    background-color: black;
+    border: solid 2px black;
+    text-align: center;
+    font-size: 30px;
+
+}
