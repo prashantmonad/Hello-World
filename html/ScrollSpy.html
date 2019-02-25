@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap ScrollSpy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <ul class="navbar">
+        <li class="nav-item">
+            <a class="nav-link" href="#section1" >section1</a>
+        </li>
+        <li class="=nav-link">
+            <a class="nav-link" href="#section2">Section2</a>
+        </li>
+        <li class="=nav-link">
+            <a class="nav-link" href="#section3">Section3</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Section 4
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#section41">Link 1</a>
+                <a class="dropdown-item" href="#section42">Link 2</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+    <h1>Section 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+    <h1>Section 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+    <h1>Section 3</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+    <h1>Section 4 Submenu 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+    <h1>Section 4 Submenu 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<br><br><br>
+<div class="container">
+    <h3>Borders with rounded class</h3>
+
+    <span class="rounded-sm"></span>
+    <span class="rounded"></span>
+    <span class="rounded-lg"></span>
+    <span class="rounded-top"></span>
+    <span class="rounded-right"></span>
+    <span class="rounded-bottom"></span>
+    <span class="rounded-left"></span>
+    <span class="rounded-circle"></span>
+    <span class="rounded-0"></span>
+</div>
+<br><br>
+<div class="clearfix">
+    <p class="float-left">Float left</p>
+    <p class="float-right">Float right</p>
+</div>
+<div class="container">
+    <div class="mx-auto bg-info" style="width:300px">Centered Allign</div>
+    <div class="w-25 bg-danger">Width 25%</div>
+    <div class="w-50 bg-success">Width 50%</div>
+    <div class="w-75 bg-info">Width 75%</div>
+    <div class="w-100 bg-success">Width 100%</div>
+
+</div>
+<br>
+
+<div class="container">
+    <h1>Height Utilities</h1>
+    <div style="height:200px;background-color:lightyellow">
+        <div class="h-25 d-inline-block p-2 bg-danger">Height 25%</div>
+        <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+        <div class="h-75 d-inline-block p-2 bg-success">Height 75%</div>
+        <div class="h-100 d-inline-block p-2 bg-info">Height 100%</div>
+        <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <h2>Horizontal Flex</h2>
+    <div class="d-flex flex-row bg-secondary mb-3">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+
+    <div class="d-flex flex-row-reverse bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+</div>
+<div class="container">
+    <h2>Vertical Flex</h2>
+    <div class="d-flex flex-column bg-secondary mb-3">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+    <h2>Alignment Center Flex</h2>
+    <div class="d-flex justify-content-center bg-secondary ">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+</div>
+<br><br>
+
+<div class="container">
+    <h4>media object</h4>
+    <div class="media border p-3">
+        <img src="images/img_avatar1.png" class="mr-3 mt-3 rounded-circle" style="width: 60px">
+        <div class="media-body">
+            <h4>Prashant Ghodeswar<small><i>posted on Jul 2018</i></small></h4>
+            <p>This is the Object media desingn in Monad infotech</p>
+            <div class="media border p-3">
+                <img src="images/img_avatar1.png" class="mr-3 mt-3 rounded-circle" style="width: 45px">
+                <div class="media-body">
+                    <h4>Prashant Ghodeswar<small><i>posted on Jul 2018</i></small></h4>
+                    <p>This is the Object media desingn in Monad infotech</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<br><br>
+<div class="container mt-3">
+    <h2>Filterable Table</h2>
+
+    <input class="form-control" id="myInput1" type="text" placeholder="Search..">
+    <br>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="myTable1">
+        <tr>
+            <td>Prashant</td>
+            <td>ghodeswar</td>
+            <td>p@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Pradip</td>
+            <td>Ghodeswar</td>
+            <td>pradip@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>mane</td>
+            <td>r@yahoo.com</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#myInput1").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable1 tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
