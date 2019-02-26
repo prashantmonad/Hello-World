@@ -1,0 +1,10 @@
+
+
+.position {
+    position: center;
+    alignment: center;
+    top: 100px;
+    width: 100%;
+    z-index: 10;
+}
+.text-extra-thin {font-weight: 100;}
