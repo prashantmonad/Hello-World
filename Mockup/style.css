@@ -1,4 +1,4 @@
-input[type=text] {
+.navbar input[type=text] {
 
      padding: 6px;
      margin-right: 16px;
@@ -10,10 +10,19 @@ input[type=text] {
  }
 
 .header{
+    display: block;
+    color: red;
+}
+.main-header{
     display: inline;
+    font-family: Laksaman;
+    font-size: larger;
+}
+.main-img{
+    width: 50px;
+    height: 50px;
 
 }
-
 
 .header {
     padding: 60px;
@@ -25,7 +34,6 @@ input[type=text] {
 
 .navbar img {
     width: 50px;
-
     height: 50px;
 }
 
@@ -34,11 +42,6 @@ input[type=text] {
     color: black;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
-}
 
 .side {
     flex: 30%;
@@ -49,7 +52,6 @@ input[type=text] {
 .main {
     flex: 70%;
     background-color: white;
-    padding: 20px;
 
 }
 
@@ -61,6 +63,25 @@ input[type=text] {
     font-family:Noto Sans Mono CJK JP Bold;
 }
 
+.img2 {
+    background-color: black;
+    height:140px;
+    width: 140px;
+    margin: 15px;
+
+}
+#myInput2{
+    width: 650px;
+
+}
+.img3 {
+    background-color: black;
+    height:30px;
+    width: 30px;
+    margin: 5px;
+
+}
+
 .footer {
     padding: 20px;
     text-align: center;
@@ -70,6 +91,7 @@ input[type=text] {
 @media screen and (max-width: 900px) {
     .row, .navbar {
         flex-direction: column;
+        background-color: lightgray;
 
     }
 
@@ -82,18 +104,40 @@ u{
     color: deepskyblue;
 
 }
+
 .grid-container{
-    display: grid;
-    color: deepskyblue;
-    background-color: #f1f1f1;
+
+    color: black;
+    background-color: lightgray;
     padding: 5px;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 5px;
-}
-.grid-container > div{
-    background-color: black;
-    border: solid 2px black;
-    text-align: center;
-    font-size: 30px;
+    grid-template-columns: auto auto;
+    alignment: center;
+
 
 }
+.grid-container > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: initial;
+    height: 200px;
+
+    alignment: center;
+
+    text-align: center;
+    font-size: large;
+
+}
+.tiles {
+    background-color: lightgray;
+    padding: 1px;
+}
+.row{
+    height: auto;
+    margin: 10px;
+}
+hr{
+    color: deepskyblue;
+}
+p{
+    margin: 20px;
+}
+
