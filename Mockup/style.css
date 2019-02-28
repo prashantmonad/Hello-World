@@ -1,13 +1,26 @@
+.body{
+    font-family: museo-sans,'Open Sans',Helvetica,sans-serif;;
+}
 .navbar input[type=text] {
 
      padding: 6px;
-     margin-right: 16px;
      border: none;
      font-size: 24px;
      width :660px;
      height : 100px;
      background-color: lightgray;
  }
+.navbar button {
+
+    border: none;
+    font-size:25px;
+    width :60px;
+    height : 100px;
+    background-color: lightgray;
+}
+.topsearch{
+    display:block;
+}
 
 .header{
     display: block;
@@ -33,18 +46,19 @@
 
 
 .navbar img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 70px;
 }
 
+
+
 .navbar a:hover {
-    background-color: lightblue;
     color: black;
 }
 
 
 .side {
-    flex: 30%;
+
     background-color: lightgray;
     padding: 20px;
 }
@@ -58,7 +72,7 @@
 .img {
     background-color: black;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-family:Noto Sans Mono CJK JP Bold;
 }
@@ -67,25 +81,29 @@
     background-color: black;
     height:140px;
     width: 140px;
-    margin: 15px;
+
 
 }
 #myInput2{
-    width: 650px;
+    width: 95%;
+
 
 }
 .img3 {
     background-color: black;
-    height:30px;
-    width: 30px;
-    margin: 5px;
+    height:60px;
+    width: 60px;
 
 }
 
 .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
+    background: black;
+
+}
+.footer img {
+    width: 50px;
+    height: 50px;
+    background-color: black;
 }
 
 @media screen and (max-width: 900px) {
@@ -105,27 +123,7 @@ u{
 
 }
 
-.grid-container{
 
-    color: black;
-    background-color: lightgray;
-    padding: 5px;
-    grid-template-columns: auto auto;
-    alignment: center;
-
-
-}
-.grid-container > div{
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: initial;
-    height: 200px;
-
-    alignment: center;
-
-    text-align: center;
-    font-size: large;
-
-}
 .tiles {
     background-color: lightgray;
     padding: 1px;
@@ -133,11 +131,75 @@ u{
 .row{
     height: auto;
     margin: 10px;
+   padding: 0px;
 }
-hr{
-    color: deepskyblue;
+.hr{
+    color: white;
+}
+.side p{
+    margin: 20px 0px 0px 0px;
 }
 p{
     margin: 20px;
 }
+footer{
+    background-color: lightgray;
+    color: red;
+}
+/*div{*/
+    /*border: solid 1px #4CAF50;*/
+    /**/
+/*}*/
+.btn {
 
+    padding: 5px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: black;
+    background-color:lightgray;
+    border: none;
+    border-radius: 0px;
+
+}
+
+.btn:hover {background-color: blue}
+
+.btn:active {
+    background-color: red;
+    box-shadow: black 10px 5px;
+}
+/*.col-md-4{*/
+    /*padding: unset;*/
+/*}*/
+/*.col-md-3{*/
+    /*padding: unset;*/
+/*}*/
+/*.col-md-6{*/
+    /*padding: unset;*/
+ /*}*/
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav-right {
+    float: right;
+}
+.imgfloat{
+    float:right;
+    display: inline;
+    margin-right: 10px;
+}
+.imgfloat img{
+    float:right;
+    width:35px;
+    height:35px;
+}
