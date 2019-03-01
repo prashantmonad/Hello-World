@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Mock</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,20 +15,26 @@
 <body>
 <nav class="navbar">
     <div class="container">
+
         <div class="input-group mb-3">
+
             <input  id="myInput1" type="text" placeholder="Search the Smithsonian learning lab">
             <div class="input-group-append">
                <button type="button" class="fa fa-search"></button>
-                <a class="navbar-brand" href="#" style="margin-left: 280px;justify-items: right"><img src="images/logo.png"></a>
             </div>
+            <img src="images/logo.png">
         </div>
     </div>
 </nav>
+<br>
 <div class="container">
+    <div class="container">
+
     <div class="row">
         <div class="col-md-3">
             <div class="side">
-                <div class="img" style="height:200px; padding: 50px 50px"><h1>COOPER HEWITT</h1></div>
+                <div class="img"><h1>COOPER HEWITT</h1></div>
+
                 <p>Some text about me in culpa qui officia deserunt
                     mollit animome text about
                     me in culpa qui officia deserunt mollit animo
@@ -41,8 +47,6 @@
                     ome text about me in culpa qui officia deserunt mollit an
                     mollit animome text about
                 </p>
-
-
             </div>
             <br>
             <div class="tiles">
@@ -72,93 +76,171 @@
         </div>
 
         <div class="col-md-9">
+
+
             <div class="main">
                 <div class="main-header">
                     <div class="imgfloat">
-                        <img src="images/heart.png" alt="Smile">
-                        <img src="images/heart.png" alt="Smile">
+                        <button class="btn"><i class="fa fa-pencil"></i></button>
+                        <button class="btn"><i class="fa fa-heart"></i></button>
                     </div>
+                    <div class="container">
 
                     <div class="row">
-
                         <h2 >Cooper Hewitt</h2>
                     </div>
-                    <div class="row">
-                        <button type="button" class="btn btn-active">Feature</button>
-                        <button type="button" class="btn">All collection</button>
-                        <button type="button" class="btn">All resources</button>
-                    </div>
-                    <div class="row">
-                        <input  id="myInput2" type="text" placeholder="Search collections">
-                        <button type="button"class="fa fa-search"></button>
-                    </div>
+                    <br>
 
+                        <button type="button" class="button ">Feature</button>
+                        <button type="button" class="button">All collection</button>
+                        <button type="button" class="button">All resources</button>
+
+                        <br><br>
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <input  id="myInput2" type="text" placeholder="Search collection">
+                            <div class="input-group-append">
+                                <button type="button" class="fa fa-search"></button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="container" >
+<br>
                 <div class="container tiles" style="background-color: black">
-                    <div class="row" style="height: 35px">
+                    <div class="row">
                         <strong style="color: white">Spotlight</strong>
                     </div>
-                    <hr style="color:white">
+                    <hr>
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="images/img_avatar1.png" height="320" :width="32   0">
+                            <img src="images/img_avatar1.png" height="280" :width="280">
                         </div>
                         <div class="col-md-7">
                             <div class="media ">
                                 <div class="media-body">
-
-                                    <h4 style="padding: 15px">Desing Camp 2018 Week 5 Ages 9-12</h4>
-                                    <p><u>Cooper hewitt education Department</u> Design <u>+7</u></p>
-
+                                    <h5><strong>Desing Camp 2018</strong></h5>
+                                    <h5><strong>Week 5 Ages 9-12</strong></h5>
+                                    <p><u>Cooper hewitt education Department<br></u> Design <u>+7</u></p>
                                     <p><strong>Thypography Today</strong></p>
 
                                     <p>A new "type" of camp activity! Discover the creativity of designing
                                         type and lettering.From cursive to calligraphy,campers will learn about
-                                        typograpyhy through gallery explorations and off-site field trips
-                                        and create their own letterforms
+                                        typograpyhy through gallery
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <br>
+            <div class="tiles">
+                <div class="row">
+                    <div class="col-md-6 text-left pl-0">
+                        <strong>Posters</strong>
+                    </div>
+                    <div class="col-md-6 text-right pr-0">
+                        <a href="#" >See all 16 Collections</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor</p>
                 </div>
 
-            </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-01.jpg"></div>
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-02.jpg"></div>
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-03.jpg"></div>
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-04.jpg"></div>
+                </div>
 
-
-            <div class="container">
-                <div class="tiles">
-                    <div class="row" style="height: 35px">
-                      <strong>Poster</strong>
-                    </div>
-                    <hr style="color:red">
-                    <div class="row">
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-02.jpg"></div>
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-03.jpg"></div>
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-04.jpg"></div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-02.jpg"></div>
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-03.jpg"></div>
-                        <div class="col-md-3"><img class="img2" src="images/portfolio-04.jpg"></div>
-                    </div>
+                <div class="row">
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-01.jpg"></div>
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-02.jpg"></div>
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-03.jpg"></div>
+                    <div class="col-md-3"><img class="img2" src="images/portfolio-04.jpg"></div>
                 </div>
             </div>
             <br>
-                <div class="col-md-6"style="float: right">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tiles">
+                            <div class="row">
+                                <div class="col-md-6 text-left pl-0">
+                                    <strong>Archicture</strong>
+                                </div>
+                                <div class="col-md-6 text-right pr-0">
+                                    <a href="#" >See all 16 Collections</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="tiles">
+                            <div class="row">
+                                <div class="col-md-6 text-left pl-0">
+                                    <strong>Graphic Design</strong>
+                                </div>
+                                <div class="col-md-6 text-right pr-0">
+                                    <a href="#" >See all 16 Collections</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                                <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="tiles">
                         <div class="row">
-                                <strong>Archicture</strong>
-                                <a href="#" style="margin-left: 100px">See all 16 Collections</a>
+                            <div class="col-md-6 text-left pl-0">
+                                <strong>Fashion Design</strong>
+                            </div>
+                            <div class="col-md-6 text-right pr-0">
+                                <a href="#" >See all 16 Collections</a>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 tempor</p>
                         </div>
+
                         <hr>
 
                         <div class="row">
@@ -180,10 +262,16 @@
                 <div class="col-md-6">
                     <div class="tiles">
                         <div class="row">
-                           <strong>Graphic Design</strong>
-                            <a href="#" style="float: right">See all 16 Collections</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            <div class="col-md-6 text-left pl-0">
+                                <strong>Texttiles</strong>
+                            </div>
+                            <div class="col-md-6 text-right pr-0">
+                                <a href="#" >See all 16 Collections</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor</p>
                         </div>
+
                         <hr>
 
                         <div class="row">
@@ -201,100 +289,50 @@
                         </div>
                     </div>
                 </div>
-
-            <br><br>
-            <div class="col-md-6"style="float: right">
-                <div class="tiles">
-                    <div class="row">
-
-                        <strong>Fashion Design</strong>
-                        <a href="#" style="float: right">See all 16 Collections</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor</p>
-                    </div>
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                    </div>
-                </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="tiles">
-                    <div class="row">
-                        <strong>Text Tiles</strong>
-                        <a href="#">See all 16 Collections</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                    </div>
-                    <hr>
+        </div>
+        </div>
+        </div>
+</div>
 
-                    <div class="row">
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                        <div class="col-md-6"><img class="img2" src="images/portfolio-01.jpg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
 <div class="container">
-    <div class="footer">
-        <br>
+<div class="footer">
         <div class="row">
-            <div class="col-md-3">
-
-                <div class="media">
-                    <img src="images/logo.png" class="rounded-circle">
-                    <div class="media-body">
-                        <h4>Smithsonian</h4>
-                        <h4><small><i>LearningLab</i></small></h4>
-
-                    </div>
-                </div>
+            <div class="col-sm-3">
+                <a href="/" class="si-footer" title="Smithsonian Learning Lab">
+                    <img src="images/sll_main_color_left.svg" style="width: 200px; height:auto " />
+                </a>
             </div>
-
-            <div class="col-md-5">
-                <div class="row">
-                <a href="#" >Home</a>
-                <a href="#">Help</a>
-                <a href="#" >Contact us</a>
-                <a href="#">Updates</a>
-                <a href="#" >Terms of Use</a>
-                </div>
-                <div class="row">
-                    <a href="#" >Privacy</a>
+            <div class="col-sm-4" >
+                <nav>
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Updates</a>
+                    <a href="#">Terms of Use</a>
+                </nav>
+                <div class="privacy">
+                    <a href="#">Privacy</a>
                     <a href="#">Kids Online Privacy Statement</a>
                 </div>
             </div>
-            <div class="col-md-3">
-                <img src="images/portfolio-03.jpg" class="rounded-circle">
-                <img src="images/portfolio-03.jpg" class="rounded-circle">
-                <img src="images/portfolio-03.jpg" class="rounded-circle">
-                <img src="images/portfolio-03.jpg" class="rounded-circle">
+            <div class="col-sm-5 text-right">
+              <span class="privacy-badges text-right">
+                  <a href="#"><img src="images/iKeepSafe-FERPA.png" ></a>
+                  <a href="#"><img src="images/iKeepSafe-COPPA.png" ></a>
+                  <a href="#"><img src="images/CommonSenseEducation.png" ></a>
+                  <a href="#"><img src="images/facebook.jpeg" ></a>
+                  <a href="#"><img src="images/twitter.png" ></a>
+              </span>
             </div>
         </div>
     </div>
 </div>
 
+
 </body>
+
+<br>
+<br>
 </html>
