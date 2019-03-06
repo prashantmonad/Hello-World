@@ -10,7 +10,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styletest.css">
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+    <style type="text/css">
+        #container ul { list-style: none; margin:0; padding:0;}
+        #container .buttons { margin-bottom: 20px; }
+        #container .list li { width: 100%; border-bottom: 1px dotted #CCC; margin-bottom: 10px; padding-bottom: 10px; }
+        #container .grid li { float: left; width: 20%; height: 50px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 20px; }
+        .acc{margin-top:3px; border:1px solid #ddd; display:block; padding:5px;}
+        .h{display:none;}
+        .v{display:block;}
+    </style>
+
+
+
+    <script type="text/javascript">
+        $(function(){
+            $('button').click(function(e) {
+                if($(this).hasClass('list')) {
+                    $('#container ul').removeClass('grid').addClass('list');
+                    $('ul li div').removeClass('h').addClass('v');
+                }
+                else if ($(this).hasClass('grid')) {
+                    $('#container ul').removeClass('list').addClass('grid');
+                    $('ul li div').removeClass('v').addClass('h');
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
 
