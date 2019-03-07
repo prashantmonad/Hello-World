@@ -12,7 +12,9 @@
     border: none;
     background-color: #E2E2E2;
     color: gray;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 100;
+
 }
 .logo img{
     height: 80px;
@@ -74,13 +76,27 @@ u{
 .widget-header-top-description p{
     margin-bottom: 0 !important;
 }
-.widget-images{
-height: auto;
-    width: 100%;
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-.spotlight-images{
-    height: 100%;
+.fill img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
     width: 100%;
+    object-fit: cover;
+}
+.widget-images{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.spotlight-images{
+    width: auto;
 }
 
 .all-search-tab {
@@ -95,31 +111,6 @@ height: auto;
 
 }
 
-
-.page .btn {
-    background-color:#E1E1E1;
-
-    color: #C0C0C0;
-    padding: 5px 35px 5px 35px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 0px;
-    width: auto;
-    height: 40px;
-    box-shadow: none;
-    text-decoration: none;
-
-
-}
-
-.page .btn:hover {color: black}
-
-
-.page .btn:focus {
-    outline: none !important;
-
-}
-
 .imgbutton .btn {
     background-color: #E1E1E1;
     border: none;
@@ -131,12 +122,11 @@ height: auto;
     width: 40px;
     height: 40px;
     box-shadow: none;
+    margin-right: 10px;
 }
 
-.imgbutton .btn:hover {
-    color: white;
-}
-.imgbutton .btn:active{
+
+.imgbutton .btn:hover{
     color:#ffffff;
     background-color: #00B6E0;
 
@@ -191,22 +181,55 @@ height: auto;
     color: #C0C0C0;
 }
 
-.nav-link:active {
+.nav-link.active{
     color: #272727;
     border-bottom: solid black;
 }
-
-.sub-content-header-links a{
+.sub-content-header-links{
     border: none;
     padding: 5px 0px 5px 15px;
     box-shadow: none;
     outline: none !important;
     color: #C3C3C3;
     font-size: 22px;
+    text-decoration: none;
 }
-.sub-content-header-links a:active{
+.sub-content-header-links.active{
     color: #272727;
 }
-.btn{
-    outline: none !important;
+.sub-content-header-links:hover{
+    text-decoration: none;
+    color: #C3C3C3;;
+}
+/*.btn.dropdown-toggle{*/
+      /*box-shadow: none;*/
+/*}*/
+/*.btn.dropdown-toggle.active{*/
+    /*color: #4BC7E7;*/
+/*}*/
+
+/*.custom-carets .dropdown-toggle:after{*/
+
+    /*font-family: FontAwesome;*/
+    /*content: "\f107";*/
+/*}*/
+
+.btn.dropdown{
+    box-shadow: none;
+}
+.btn.dropdown:hover{
+    color: #4BC7E7;
+}
+
+.custom-carets .dropdown:after{
+    font-family: FontAwesome;
+    content: "\f107";
+}
+
+.custom-carets .dropdown.active:after{
+    font-family: FontAwesome;
+    content: "\f105";
+}
+.custom-carets .dropdown-toggle{
+    display: none;
 }
