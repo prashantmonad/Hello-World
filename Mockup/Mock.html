@@ -10,19 +10,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styletest.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <div class="top-header-search-section">
+    <div class="top-header-search-section pb-5">
         <div class="row">
             <div class="col-md-10">
-                <div class="input-group">
+                <div class="input-group" style="width: 100%">
                     <input type="text" placeholder="Search the Smithsonian learning lab">
-
                     <div class="input-group-append">
-                        <button type="button" class="fa fa-search"></button>
+                        <button type="button" class="fa fa-search fa-xs"></button>
                     </div>
                 </div>
             </div>
@@ -31,8 +30,7 @@
             </div>
         </div>
     </div>
-    <br><br>
-    <div class="row">
+    <div class="row pt-4">
         <div class="col-md-3 ">
             <div class="sidebar-top-section px-4 py-4">
                 <div class="sidebar-images"><h1>COOPER HEWITT</h1></div>
@@ -41,7 +39,7 @@
                         mollit animome text about
                         me in culpa qui officia deserunt mollit animo
                         me text about me in culpa his is a
-                        <u>parragraph text about me in culpa</u>
+                        <a href="#">parragraph text about me in culpa</a>
                     </p>
                     <p>
                         qui officia deserunt mollit
@@ -98,35 +96,35 @@
 
         <div class="col-md-9">
             <div class="main-content">
-                <div class="row">
+                <div class="row pb-5">
                     <div class="col-md-8">
                         <div class="main-content-header">
-                            <h2>Cooper Hewitt</h2>
+                            <h1>Cooper Hewitt</h1>
                         </div>
                     </div>
                     <div class="col-md-4 text-right" role="tablist">
                         <div class="nav imgbutton  justify-content-end">
-                            <button class="btn active" data-toggle="tab"><i class="fa fa-pencil "></i></button>
-                            <button class="btn" data-toggle="tab"><i class="fa fa-heart"></i></button>
+                            <button class="btn py-1 active" data-toggle="tab"><i class="fa fa-pencil"></i></button>
+                            <button class="btn py-1" data-toggle="tab"><i class="fa fa-heart"></i></button>
                         </div>
                     </div>
                 </div>
-                <br><br>
+
                 <!--<div class="page">-->
                     <!--<button class="btn active"  data-toggle="tab">Feature</button>-->
                     <!--<button class="btn"  data-toggle="tab">All collection</button>-->
                     <!--<button class="btn"  data-toggle="tab">All resources</button>-->
                 <!--</div>-->
-                <br>
+
                 <div class="nav"  role="tablist">
-                    <a class="nav-link" data-toggle="tab" href="#feature">Feature</a>
-                    <a class="nav-link active" data-toggle="tab" href="#collection">All collection</a>
+                    <a class="nav-link active" data-toggle="tab" href="#feature">Feature</a>
+                    <a class="nav-link " data-toggle="tab" href="#collection">All collection</a>
                    <a class="nav-link" data-toggle="tab" href="#resources">All resources</a>
                 </div>
 
-                <div class="tab-content">
-                    <div id="feature" class="tab-pane fade "><br>
-                        <div class="row">
+                <div class="tab-content py-4">
+                    <div id="feature" class="tab-pane active">
+                        <div class="row py-4">
                             <div class="col-md-12">
                                 <div class="input-group">
                                     <input  class="all-search-tab" type="text" placeholder="Search collection">
@@ -140,23 +138,24 @@
                         <div class="widget-spotlight-section">
                             <div class="row widget-spotlight-header-section">
                                 <div class="col-md-12">
-                                    <h1 class="widget-spotlight-title px-4 py-4">Spotlight</h1>
+                                    <h1 class="widget-spotlight-title px-4 py-3">Spotlight</h1>
                                 </div>
                             </div>
-                            <div class="row px-4 py-4">
+                            <div class="row px-4 py-3 pb-4">
                                 <div class="col-md-5">
-                                    <img class="img-fluid  spotlight-images" src="images/img_avatar1.png">
+                                    <img class="spotlight-images" src="images/Spotlight.png">
                                 </div>
                                 <div class="col-md-7">
                                     <div class="media ">
-                                        <div class="media-body">
+                                            <div class="spotlight-body">
                                             <h5><strong>Desing Camp 2018</strong></h5>
                                             <h5><strong>Week 5 Ages 9-12</strong></h5>
-                                            <p><u>Cooper hewitt education Department<br></u> Design <u>+7</u></p>
+                                            <a href="#">Cooper hewitt education Department<br></a> Design <a href="#">+7</a>
                                             <p><strong>Thypography Today</strong></p>
                                             <p>A new "type" of camp activity! Discover the creativity of designing
                                                 type and lettering.From cursive to calligraphy,campers will learn about
                                                 typograpyhy through gallery
+                                                lorem
                                             </p>
                                         </div>
                                     </div>
@@ -164,7 +163,6 @@
 
                             </div>
                         </div>
-
                         <br>
                         <div class="widget-main-section">
                             <div class="row widget-header-top-section">
@@ -174,7 +172,7 @@
                                 <div class="col-md-6 text-right pt-3">
                                     <a href="#" class="widget-header-see-all-link px-4">See all Collections</a>
                                 </div>
-                                <div class="col-md-12 px-3 pb-9">
+                                <div class="col-md-12">
                                     <div class="widget-header-top-description px-4 pb-3">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, distinctio ducimus
@@ -189,27 +187,27 @@
                                     <img class="" src="images/portfolio-02.jpg">
                                 </div>
                                 <div class="col-md-3 fill ">
-                                    <img class="" src="images/elephant.jpeg">
-                                </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/elephant.jpeg">
-                                </div>
-                                <div class="col-md-3 fill ">
                                     <img class="" src="images/img_avatar1.png">
                                 </div>
-                            </div>
-                            <div class="row px-4 py-4">
                                 <div class="col-md-3 fill ">
                                     <img class="" src="images/portfolio-02.jpg">
                                 </div>
                                 <div class="col-md-3 fill ">
-                                    <img class="" src="images/elephant.jpeg">
+                                    <img class="" src="images/portfolio-02.jpg">
+                                </div>
+                            </div>
+                            <div class="row px-4 pb-4">
+                                <div class="col-md-3 fill ">
+                                    <img class="" src="images/portfolio-02.jpg">
                                 </div>
                                 <div class="col-md-3 fill ">
-                                    <img class="" src="images/elephant.jpeg">
+                                    <img class="" src="images/portfolio-02.jpg">
                                 </div>
                                 <div class="col-md-3 fill ">
-                                    <img class="" src="images/elephant.jpeg">
+                                    <img class="" src="images/img_avatar1.png">
+                                </div>
+                                <div class="col-md-3 fill ">
+                                    <img class="" src="images/portfolio-02.jpg">
                                 </div>
                             </div>
 
@@ -239,7 +237,7 @@
                                             <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-1">
@@ -247,7 +245,7 @@
                                             <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-4">
@@ -283,15 +281,15 @@
                                             <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-1">
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-4">
@@ -330,7 +328,7 @@
                                             <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-1">
@@ -338,12 +336,12 @@
                                             <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-4">
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                         <div class="col-md-6 fill ">
                                             <img class="" src="images/img_avatar1.png">
@@ -382,7 +380,7 @@
                                             <img class="" src="images/portfolio-02.jpg">
                                         </div>
                                         <div class="col-md-6 fill ">
-                                            <img class="" src="images/elephant.jpeg">
+                                            <img class="" src="images/img_avatar1.png">
                                         </div>
                                     </div>
                                     <div class="row px-4 py-4">
@@ -398,24 +396,31 @@
                         </div>
                     </div><!--**************Feature Tab Ends here***********-->
 
-                    <div id="collection" class="tab-pane active"><br>
-                        <div class="row">
+                    <div id="collection" class="tab-pane fade">
+                        <div class="row py-3">
                             <div class="col-md-12">
                                 <div class="input-group">
                                     <input  class="all-search-tab" type="text" placeholder="Design">
                                     <div class="input-group-append">
-                                        <button type="button" class="fa fa-search"></button>
+                                        <button type="button" class="fa fa-search">
+                                            <span ></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
+
                         <div class="row">
-                            <div class="col-md-3 pl-0">
-                                <div class="dropdown custom-carets dropright">
-                                    <button type="button" class="btn dropdown active" data-toggle="dropdown">
+                            <div class="col-md-3">
+                                <div class="dropdown  custom-carets dropright text-left">
+                                    <button type="button" class="btn dropdown pl-0 active " data-toggle="dropdown">
                                         Refine search
                                     </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-items">Search 1</div>
+                                        <div class="dropdown-items">Search 2</div>
+                                        <div class="dropdown-items">Search 3</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -423,23 +428,34 @@
                                     <button type="button" class="btn dropdown" data-toggle="dropdown">
                                         Filter by:Cooper Hewitt
                                     </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-item">filter 1</div>
+                                        <div class="dropdown-item">filter 2</div>
+                                        <div class="dropdown-item">filter 3</div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-5">
-                                <div class="dropdown custom-carets">
-                                    <button type="button" class="btn dropdown" data-toggle="dropdown">
+                                <div class="dropdown custom-carets text-right">
+                                    <button type="button" class="btn dropdown pr-0 " data-toggle="dropdown">
                                        Sort by:Date modified(Most recent First)
                                     </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">Date 1</a>
+                                        <a class="dropdown-item">Date 2</a>
+                                        <a class="dropdown-item">Date 3</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
+
 
                         <div class="collection-widget-main-section">
-                            <div class="row">
+                            <div class="row pt-3">
                                 <div class="col-md-8">
                                     <div class="sub-content-header">
-                                        <h5>Desing: 18 Collections</h5>
+                                       <h>Desing: 18 Collections</h2>
                                     </div>
                                 </div>
                                 <div class="col-md-4 text-right">
@@ -450,62 +466,46 @@
                                 </div>
 
                             </div>
-                            <div class="row ">
-                                <div class="col-md-3 fill py-4">
+                            <div class="row py-3">
+                                <div class="col-md-3 fill">
                                         <img class="" src="images/portfolio-02.jpg">
                                 </div>
-                                <div class="col-md-3 fill py-4">
-                                        <img class="" src="images/portfolio-04.jpg">
+                                <div class="col-md-3 fill">
+                                        <img class="" src="images/portfolio-05.jpg">
                                 </div>
-                                <div class="col-md-3 fill py-4">
+                                <div class="col-md-3 fill">
                                         <img class="" src="images/img_avatar1.png">
                                 </div>
-                                <div class="col-md-3 fill py-4">
-                                        <img class="" src="images/portfolio-04.jpg">
+                                <div class="col-md-3 fill">
+                                        <img class="" src="images/portfolio-05.jpg">
                                 </div>
-                                <div class="col-md-3 fill py-4">
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-md-3 fill">
                                     <img class="" src="images/img_avatar1.png">
                                 </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/portfolio-04.jpg">
+                                <div class="col-md-3 fill">
+                                    <img class="" src="images/portfolio-05.jpg">
                                 </div>
-                                <div class="col-md-3 fill py-4">
+                                <div class="col-md-3 fill">
                                     <img class="" src="images/logo.png">
                                 </div>
-                                <div class="col-md-3 fill py-4">
+                                <div class="col-md-3 fill">
                                     <img class="" src="images/portfolio-02.jpg">
                                 </div>
                             </div>
-                            <div class="row ">
-                                <div class="col-md-3 fill py-4">
+                            <div class="row py-3">
+                                <div class="col-md-3 fill">
                                     <img class="" src="images/img_avatar1.png">
                                 </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/elephant.jpeg">
+                                <div class="col-md-3 fill ">
+                                    <img class="" src="images/portfolio-02.jpg">
                                 </div>
-                                <div class="col-md-3 fill py-4">
+                                <div class="col-md-3 fill">
                                     <img class="" src="images/img_avatar1.png">
                                 </div>
-                                <div class="col-md-3 fill py-4">
+                                <div class="col-md-3 fill">
                                     <img class="" src="images/portfolio-04.jpg">
-                                </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/img_avatar1.png">
-                                </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/portfolio-04.jpg">
-                                </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/logo.png">
-                                </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/SAAM-1983.63.831_1.jpg">
-                                </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/logo.png">
-                                </div>
-                                <div class="col-md-3 fill py-4">
-                                    <img class="" src="images/SAAM-1983.63.831_1.jpg">
                                 </div>
                             </div>
 
@@ -514,32 +514,33 @@
 
 
                     </div><!--**********Collection tab End here ********-->
-                    <div id="resources" class="container tab-pane fade"><br>
-                        <h3>resource</h3>
+                    <div id="resources" class="container tab-pane"><br>
+
                         <div class="row">
                             <div class="input-group">
                                 <input  class="all-search-tab" type="text" placeholder=" Design..">
                                 <div class="input-group-append">
                                     <button type="button" class="fa fa-search"></button>
                                 </div>
+                                <h3>Resource</h3>
                             </div>
                         </div>
                     </div> <!--*****************Resource Tab End***************-->
                 </div>
             </div>
-            <br><br>
+
 
         </div>
     </div><!--body Ends -->
-    <br><br>
-    <div class="footer">
+
+    <div class="footer px-4 py-4">
         <div class="row">
             <div class="col-sm-3">
                 <a href="/" class="si-footer" title="Smithsonian Learning Lab">
                     <img src="images/sll_main_color_left.svg" style="width: 200px; height:auto " />
                 </a>
             </div>
-            <div class="col-sm-5" >
+            <div class="col-sm-5 pt-3" >
                 <div class="footerLinks">
                     <a href="#">About</a>
                     <a href="#">Help</a>
@@ -553,16 +554,17 @@
                 </div>
             </div>
             <div class="col-sm-4 text-right">
-              <span class="privacy-badges text-right">
+              <span class="footer-privacy-badges text-right">
                   <a href="#"><img src="images/iKeepSafe-FERPA.png" ></a>
                   <a href="#"><img src="images/iKeepSafe-COPPA.png" ></a>
                   <a href="#"><img src="images/CommonSenseEducation.png" ></a>
-                  <a href="#"><img src="images/facebook.jpeg" ></a>
-                  <a href="#"><img src="images/twitter.png" ></a>
+                  <a href="#" class="fa fa-facebook fa-2x"></a>
+                  <a href="#" class="fa fa-twitter fa-2x"></a>
               </span>
             </div>
         </div>
     </div>
+
 </div>
 
 </body>

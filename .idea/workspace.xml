@@ -4,8 +4,7 @@
     <list default="true" id="5dc72ae5-0a75-4d1f-a8f4-8c00eeacc914" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Mockup/Mock.html" afterPath="$PROJECT_DIR$/Mockup/Mock.html" />
-      <change beforePath="$PROJECT_DIR$/Mockup/Mocktest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Mockup/styletest.css" afterPath="$PROJECT_DIR$/Mockup/styletest.css" />
+      <change beforePath="$PROJECT_DIR$/Mockup/styletest.css" afterPath="$PROJECT_DIR$/Mockup/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,23 +15,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mock.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mock.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mockup/Mock.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="332" column="35" lean-forward="false" selection-start-line="332" selection-start-column="35" selection-end-line="332" selection-end-column="35" />
+            <state relative-caret-position="242">
+              <caret line="386" column="31" lean-forward="true" selection-start-line="386" selection-start-column="31" selection-end-line="386" selection-end-column="31" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styletest.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mockup/styletest.css">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mockup/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1565">
-              <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+            <state relative-caret-position="607">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -51,15 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vis</find>
-      <find>row</find>
-      <find>til</find>
-      <find>pa</find>
-      <find>inpu</find>
-      <find>form</find>
-      <find>appe</find>
-      <find>tiles</find>
-      <find>ro</find>
       <find>div</find>
       <find>padding-left</find>
       <find>sty</find>
@@ -77,10 +68,19 @@
       <find>red</find>
       <find>googleapis</find>
       <find>butt</find>
-      <find>btn</find>
       <find>image</find>
       <find>page</find>
       <find>widget-images</find>
+      <find>main-content-header</find>
+      <find>main</find>
+      <find>spot</find>
+      <find>br</find>
+      <find>sub</find>
+      <find>sub-content-header</find>
+      <find>media-body</find>
+      <find>sub-content-header-links</find>
+      <find>input</find>
+      <find>btn</find>
     </findStrings>
     <replaceStrings>
       <replace>skyblue</replace>
@@ -127,10 +127,10 @@
         <option value="$PROJECT_DIR$/html/ResposnsiveWebsite.html" />
         <option value="$PROJECT_DIR$/Mockup/test.html" />
         <option value="$PROJECT_DIR$/Mockup/test.css" />
-        <option value="$PROJECT_DIR$/Mockup/style.css" />
         <option value="$PROJECT_DIR$/myscript.js" />
-        <option value="$PROJECT_DIR$/Mockup/Mocktest.html" />
         <option value="$PROJECT_DIR$/Mockup/styletest.css" />
+        <option value="$PROJECT_DIR$/Mockup/Mocktest.html" />
+        <option value="$PROJECT_DIR$/Mockup/style.css" />
         <option value="$PROJECT_DIR$/Mockup/Mock.html" />
       </list>
     </option>
@@ -260,15 +260,16 @@
       <workItem from="1551758622676" duration="11617000" />
       <workItem from="1551771357526" duration="23210000" />
       <workItem from="1551845195831" duration="33321000" />
-      <workItem from="1551931602601" duration="32177000" />
+      <workItem from="1551931602601" duration="33078000" />
+      <workItem from="1552016150780" duration="28954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395007000" />
+    <option name="totallyTimeSpent" value="424862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
+    <frame x="354" y="18" width="1865" height="1092" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18411165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -577,30 +578,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mockup/style.css" />
     <entry file="file://$PROJECT_DIR$/myscript.js" />
     <entry file="file://$PROJECT_DIR$/Mockup/Mock.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="332" column="35" lean-forward="false" selection-start-line="332" selection-start-column="35" selection-end-line="332" selection-end-column="35" />
+        <state relative-caret-position="242">
+          <caret line="386" column="31" lean-forward="true" selection-start-line="386" selection-start-column="31" selection-end-line="386" selection-end-column="31" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mockup/styletest.css">
+    <entry file="file://$PROJECT_DIR$/Mockup/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1565">
-          <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+        <state relative-caret-position="607">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mockup/Mocktest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="464" column="1" lean-forward="true" selection-start-line="462" selection-start-column="0" selection-end-line="464" selection-end-column="1" />
+        <state relative-caret-position="1818">
+          <caret line="158" column="10" lean-forward="false" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mockup/styletest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1705">
+          <caret line="252" column="17" lean-forward="true" selection-start-line="252" selection-start-column="17" selection-end-line="252" selection-end-column="17" />
           <folding />
         </state>
       </provider>
