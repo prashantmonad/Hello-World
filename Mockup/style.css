@@ -1,24 +1,31 @@
 /******Navbar*/
-.top-header-search-section .input-group input[type=text] {
+body{
+    font-family: "Lato Light"!important;
+}
+.top-header-search-section .form-group input[type=text] {
     border: none;
-    width :80%;
+    width :75% !important;
     background-color: #E2E2E2;
     font-size: 20px;
-    height: 80px;
-    margin: 0;
+    height: 40%;
     padding: 30px 0 30px 30px;
+    border-radius: 0px;
+    box-shadow: none;
 }
-.input-group-append button{
+.input-group-addon .btn{
     border: none;
     background-color: #E2E2E2;
-    color: gray;
-    font-size: 28px;
+    color: black;
+    font-size: 35px;
     font-weight: 100;
-    position: relative;
-
+    -webkit-text-stroke: 3px #E2E2E2;
+    box-shadow: none;
+    border-radius: 0;
+    height: 100%;
 }
-.logo img{
-    height: 80px;
+
+.logo{
+    width: 100px;
 }
 /********Navbar end*/
 
@@ -30,8 +37,6 @@
 .sidebar-images{
     background-color: black;
     padding: 20%;
-    color: white;
-    font-family:Noto Sans Mono CJK JP Bold;
 }
 .sidebar-top-description a,.spotlight-body a{
     color: #59C6E0;
@@ -67,6 +72,7 @@
 .widget-header-title{
     font-size: 18px !important;
     font-weight: 600 !important;
+    font-family:"Lato Semibold"!important;
 }
 .widget-header-see-all-link{
     color: #9E9E9E !important;
@@ -76,8 +82,10 @@
     text-decoration: none !important;
 }
 .widget-header-top-description{
-    border-bottom: 1px solid #fff;
     padding: 0 20px;
+}
+.widget-images{
+    border-top: 1px solid #fff;
 }
 .widget-header-top-description p{
     margin-bottom: 0 !important;
@@ -100,8 +108,7 @@
     width: 100%;
 }
 
-.all-search-tab {
-    width: 95%;
+.input-group .form-control {
     height: 40px;
     border-radius: 0;
     margin: 0;
@@ -109,7 +116,12 @@
     border-color:lightgray;
     padding: 10px;
     background-color: #FFFFFF;
+    box-shadow: none;
 }
+.input-group-addon.common .btn{
+    font-size: 28px !important;
+}
+
 
 .imgbutton .btn {
     background-color: #E1E1E1;
@@ -119,8 +131,8 @@
     font-size: 24px;
     cursor: pointer;
     border-radius: 0px;
-    width: 40px;
-    height: 40px;
+    width:40px ;
+
     box-shadow: none;
     margin-right: 10px;
 }
@@ -138,12 +150,16 @@
 
 /*Footer*/
 .footer {
-    background: black;
+    background: #252626;
 
+}
+.footer .footer-logo img{
+    width: 85%;
+    background-color: #252626;
 }
 .footer img {
     width: 70px;
-    background-color: black;
+    background-color: #252626;
 }
 
 .footer a {
@@ -152,7 +168,7 @@
     padding: 4px;
 }
 .footerLinks a {
-    color: #525353;
+    color: #666666;
     text-decoration: none;
     padding: 5px;
 }
@@ -165,8 +181,7 @@
 .nav-link{
     background-color: #E1E1E1;
     color: #C0C0C0;
-    padding: 5px 35px 5px 35px;
-    font-size: 18px;
+    font-size: 95%;
     cursor: pointer;
     border-radius: 0px;
     width: auto;
@@ -195,6 +210,7 @@
 }
 .sub-content-header{
     font-size: 20px;
+    font-weight: 700;
 }
 .sub-content-header-links.active{
     color: #272727;
@@ -206,7 +222,6 @@
 
 .btn.dropdown{
     box-shadow: none;
-
 }
 .dropdown.active{
     color: #4BC7E7;
@@ -220,4 +235,3 @@
     font-family: FontAwesome;
     content: "\f105";
 }
-

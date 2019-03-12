@@ -15,94 +15,124 @@
 <body>
 
 <div class="container">
-    <div class="top-header-search-section pb-5">
+    <div class="top-header-search-section mb-4">
         <div class="row">
-            <div class="col-md-10">
-                <div class="input-group" style="width: 100%">
-                    <input type="text" placeholder="Search the Smithsonian learning lab">
-                    <div class="input-group-append">
-                        <button type="button" class="fa fa-search fa-xs"></button>
+            <div class="col-md-8 col-9">
+                <div class="form-group" style="display:inline;">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search the Smithsonian learning lab">
+                        <span class="input-group-addon"><button type="button" class="btn fa fa-search"></button></span></span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 logo" >
-                <img src="images/logo.png">
+            <div class="col-md-4 text-right col-3 logo" >
+                <img class="logo" src="images/logo.png">
             </div>
         </div>
     </div>
-    <div class="row pt-4">
-        <div class="col-md-3 ">
-            <div class="sidebar-top-section px-4 py-4">
-                <div class="sidebar-images"><h1>COOPER HEWITT</h1></div>
-                <div class="sidebar-top-description pt-4">
-                    <p>Some text about me in culpa qui officia deserunt
-                        mollit animome text about
-                        me in culpa qui officia deserunt mollit animo
-                        me text about me in culpa his is a
-                        <a href="#">parragraph text about me in culpa</a>
-                    </p>
-                    <p>
-                        qui officia deserunt mollit
-                        anim ome text about me in culpa qui officia deserunt mollit anim
-                        ome text about me in culpa qui officia deserunt mollit an
-                        mollit animome text about
-                    </p>
+    <div class="row pb-2 d.block d-md-none"> <!-- Only For Mobile Device-->
+        <div class="col-md-8 col-7">
+            <div class="main-content-header">
+                <h1>Cooper Mobile </h1>
+            </div>
+        </div>
+        <div class="col-md-4 col-5 text-right pt-2" role="tablist">
+            <div class="nav imgbutton  justify-content-end">
+                <button class="btn py-1 active" data-toggle="tab"><i class="fa fa-pencil"></i></button>
+                <button class="btn py-1" data-toggle="tab"><i class="fa fa-heart"></i></button>
+            </div>
+        </div>
+    </div><!-- End of Only For Mobile Device-->
+
+
+    <div class="row pt-2">
+        <div class="col-md-3">
+            <div class="sidebar-top-section px-4 pt-4">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="sidebar-images">
+                            <img src="images/cooper-hewitt-logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12 col-12">
+                        <button type="button" class="btn dropdown d-block d-md-none" data-toggle="collapse" data-target="#demo1">About<i class="fa fa-angle-down"></i></button>
+                        <div id="demo" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div  id="demo1" class="sidebar-top-description collapse show pt-4">
+                            <p>Some text about me in culpa qui officia deserunt
+                                mollit animome text about
+                                me in culpa qui officia deserunt mollit animo
+                                me text about me in culpa his is a
+                                <a href="#">parragraph text about me in culpa</a>
+                            </p>
+                            <p>
+                                qui officia deserunt mollit
+                                anim ome text about me in culpa qui officia deserunt mollit anim
+                                ome text about me in culpa qui officia deserunt mollit an
+                                mollit animome text about
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="sidebar-releted-images">
-                <div class="widget-main-section">
+            <div class="sidebar-releted-images d-none d-md-block">
+                <div class="widget-main-section px-3 py-3">
                     <div class="row sidebar-widget-header-top-section">
                         <div class="col-md-12 ">
-                            <h1 class="widget-header-title px-4 pt-3">Related Groups </h1>
+                            <h1 class="widget-header-title 3">Related Groups </h1>
                         </div>
                     </div>
-                    <div class="row pl-3 py-3 pr-3">
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                    <div class="row">
+                        <div class="col-md-4 col-3 fill pt-3 ">
+                            <img class="" src="images/portfolio-02.jpg">
                         </div>
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                        <div class="col-md-4 col-3 fill pt-3 ">
+                            <img class="" src="images/img_avatar1.png">
                         </div>
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/img_avatar1.png">
                         </div>
-                    </div>
-                    <div class="row px-3 pb-3">
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/img_avatar1.png">
                         </div>
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/portfolio-02.jpg">
                         </div>
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/portfolio-02.jpg">
                         </div>
-                    </div>
-                    <div class="row px-3 pb-3">
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/portfolio-02.jpg">
                         </div>
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/img_avatar1.png">
                         </div>
-                        <div class="col-md-4">
-                            <img class="widget-images rounded" src="images/portfolio-01.jpg">
+                        <div class="col-md-4 col-3 fill pt-3">
+                            <img class="" src="images/img_avatar1.png">
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
+
         <div class="col-md-9">
             <div class="main-content">
-                <div class="row pb-5">
-                    <div class="col-md-8">
+                <div class="row pb-3 ">
+                    <div class="col-md-8 d-none d-md-block">
                         <div class="main-content-header">
                             <h1>Cooper Hewitt</h1>
                         </div>
                     </div>
-                    <div class="col-md-4 text-right" role="tablist">
+                    <div class="col-md-4 d-none d-md-block text-right" role="tablist">
                         <div class="nav imgbutton  justify-content-end">
                             <button class="btn py-1 active" data-toggle="tab"><i class="fa fa-pencil"></i></button>
                             <button class="btn py-1" data-toggle="tab"><i class="fa fa-heart"></i></button>
@@ -122,20 +152,19 @@
                    <a class="nav-link" data-toggle="tab" href="#resources">All resources</a>
                 </div>
 
-                <div class="tab-content py-4">
+                <div class="tab-content py-3">
                     <div id="feature" class="tab-pane active">
-                        <div class="row py-4">
-                            <div class="col-md-12">
-                                <div class="input-group">
-                                    <input  class="all-search-tab" type="text" placeholder="Search collection">
-                                    <div class="input-group-append">
-                                        <button type="button" class="fa fa-search"></button>
+                        <div class="row py-2 pb-3">
+                            <div class="col-md-12 col-12">
+                                <div class="form-group" style="display:inline;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-addon common"><button type="button" class="btn fa fa-search"></button></span></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="widget-spotlight-section">
+                        <div class="widget-spotlight-section my-4">
                             <div class="row widget-spotlight-header-section">
                                 <div class="col-md-12">
                                     <h1 class="widget-spotlight-title px-4 py-3">Spotlight</h1>
@@ -163,17 +192,17 @@
 
                             </div>
                         </div>
-                        <br>
                         <div class="widget-main-section">
                             <div class="row widget-header-top-section">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-6">
                                     <h1 class="widget-header-title px-4 pt-3">Posters</h1>
                                 </div>
-                                <div class="col-md-6 text-right pt-3">
-                                    <a href="#" class="widget-header-see-all-link px-4">See all Collections</a>
+                                <div class="col-md-6 col-6 text-right pt-3">
+                                    <a href="#" class="widget-header-see-all-link px-4 d-none d-md-block">See all Collections</a><!--For Medium Screen only-->
+                                    <a href="#" class="widget-header-see-all-link px-4 d-block d-md-none">See all</a><!--For Mobile Screens only-->
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="widget-header-top-description px-4 pb-3">
+                                    <div class="widget-header-top-description d-none d-md-block px-4 pb-3">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, distinctio ducimus
                                             molestiae odit possimus quis repellendus. Ab aut corporis, dolor dolore est maxime
@@ -182,49 +211,51 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row px-4 py-4">
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/portfolio-02.jpg">
+                            <div class="widget-images">
+                                <div class="row px-4">
+                                    <div class="col-md-3 fill pt-4 ">
+                                        <img class="" src="images/portfolio-02.jpg">
+                                    </div>
+                                    <div class="col-md-3 fill  pt-4">
+                                        <img class="" src="images/img_avatar1.png">
+                                    </div>
+                                    <div class="col-md-3 fill   pt-4">
+                                        <img class="" src="images/portfolio-02.jpg">
+                                    </div>
+                                    <div class="col-md-3 fill   pt-4">
+                                        <img class="" src="images/portfolio-02.jpg">
+                                    </div>
                                 </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/img_avatar1.png">
-                                </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/portfolio-02.jpg">
-                                </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/portfolio-02.jpg">
+                                <div class="row px-4 pb-4 mb-4">
+                                    <div class="col-md-3 fill  pt-4  ">
+                                        <img class="" src="images/portfolio-02.jpg">
+                                    </div>
+                                    <div class="col-md-3 fill  pt-4 ">
+                                        <img class="" src="images/portfolio-02.jpg">
+                                    </div>
+                                    <div class="col-md-3 fill  pt-4 ">
+                                        <img class="" src="images/img_avatar1.png">
+                                    </div>
+                                    <div class="col-md-3 fill  pt-4 ">
+                                        <img class="" src="images/portfolio-02.jpg">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row px-4 pb-4">
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/portfolio-02.jpg">
-                                </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/portfolio-02.jpg">
-                                </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/img_avatar1.png">
-                                </div>
-                                <div class="col-md-3 fill ">
-                                    <img class="" src="images/portfolio-02.jpg">
-                                </div>
-                            </div>
-
                         </div><!-- End of 2*8 widget**-->
-                        <br>
+
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="widget-main-section">
                                     <div class="row widget-header-top-section">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-6">
                                             <h1 class="widget-header-title px-4 pt-3">Archicture</h1>
                                         </div>
-                                        <div class="col-md-6 text-right pt-3">
-                                            <a href="#" class="widget-header-see-all-link px-4">See all Collections</a>
+                                        <div class="col-md-6 col-6 text-right pt-3">
+                                            <a href="#" class="widget-header-see-all-link px-4 d-none d-md-block">See all Collections</a><!--For Medium Screen only-->
+                                            <a href="#" class="widget-header-see-all-link px-4 d-block d-md-none">See all</a><!--For Mobile Screens only-->
                                         </div>
                                         <div class="col-md-12 px-3 pb-9">
-                                            <div class="widget-header-top-description px-4 pb-3">
+                                            <div class="widget-header-top-description d-none d-md-block px-4 pb-3">
                                                 <p>
                                                     Lorem ipsum dolor sit amet, consectetur adi pisi ci ng elit.Autem, distinctio ducimus
                                                     molestiae
@@ -232,28 +263,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
+                                    <div class="widget-images">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row px-4 py-1">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
-                                        </div>
-                                    </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4 pb-4 mb-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -261,14 +294,15 @@
                             <div class="col-md-6">
                                 <div class="widget-main-section">
                                     <div class="row widget-header-top-section">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-6">
                                             <h1 class="widget-header-title px-4 pt-3">Graphics</h1>
                                         </div>
-                                        <div class="col-md-6 text-right pt-3">
-                                            <a href="#" class="widget-header-see-all-link px-4">See all Collections</a>
+                                        <div class="col-md-6 col-6 text-right pt-3">
+                                            <a href="#" class="widget-header-see-all-link px-4 d-none d-md-block">See all Collections</a><!--For Medium Screen only-->
+                                            <a href="#" class="widget-header-see-all-link px-4 d-block d-md-none">See all</a><!--For Mobile Screens only-->
                                         </div>
                                         <div class="col-md-12 px-3 pb-9">
-                                            <div class="widget-header-top-description px-4 pb-3">
+                                            <div class="widget-header-top-description d-none d-md-block px-4 pb-3">
                                                 <p>
                                                     Lorem ipsum dolor sit amet, consectetur adi pisi ci ng elit.Autem, distinctio ducimus
                                                     molestiae
@@ -276,46 +310,48 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
+                                    <div class="widget-images">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row px-4 py-1">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4 pb-4 mb-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="widget-main-section">
                                     <div class="row widget-header-top-section">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-6">
                                             <h1 class="widget-header-title px-4 pt-3">Fashion</h1>
                                         </div>
-                                        <div class="col-md-6 text-right pt-3">
-                                            <a href="#" class="widget-header-see-all-link px-4">See all Collections</a>
+                                        <div class="col-md-6 col-6 text-right pt-3">
+                                            <a href="#" class="widget-header-see-all-link px-4 d-none d-md-block">See all Collections</a><!--For Medium Screen only-->
+                                            <a href="#" class="widget-header-see-all-link px-4 d-block d-md-none">See all</a><!--For Mobile Screens only-->
                                         </div>
                                         <div class="col-md-12 px-3 pb-9">
-                                            <div class="widget-header-top-description px-4 pb-3">
+                                            <div class="widget-header-top-description d-none d-md-block px-4 pb-3">
                                                 <p>
                                                     Lorem ipsum dolor sit amet, consectetur adi pisi ci ng elit.Autem, distinctio ducimus
                                                     molestiae
@@ -323,42 +359,46 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
+                                    <div class="widget-images">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
+                                        </div>
+                                        <div class="row px-4 pb-4 mb-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row px-4 py-1">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="widget-main-section">
                                     <div class="row widget-header-top-section">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-6">
                                             <h1 class="widget-header-title px-4 pt-3">TextTiles</h1>
                                         </div>
-                                        <div class="col-md-6 text-right pt-3">
-                                            <a href="#" class="widget-header-see-all-link px-4">See all Collections</a>
+                                        <div class="col-md-6 col-6 text-right pt-3">
+                                            <a href="#" class="widget-header-see-all-link px-4 d-none d-md-block">See all Collections</a><!--For Medium Screen only-->
+                                            <a href="#" class="widget-header-see-all-link px-4 d-block d-md-none">See all</a><!--For Mobile Screens only-->
                                         </div>
-                                        <div class="col-md-12 px-3 pb-9">
+                                        <div class="col-md-12  px-3 pb-9 d-none d-md-block">
                                             <div class="widget-header-top-description px-4 pb-3">
                                                 <p>
                                                     Lorem ipsum dolor sit amet, consectetur adi pi sicing elit. Autem, distinctio ducimus
@@ -367,28 +407,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
+                                    <div class="widget-images">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row px-4 py-1">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
-                                        </div>
-                                    </div>
-                                    <div class="row px-4 py-4">
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/portfolio-02.jpg">
-                                        </div>
-                                        <div class="col-md-6 fill ">
-                                            <img class="" src="images/img_avatar1.png">
+                                        <div class="row px-4 pb-4 mb-4">
+                                            <div class="col-md-6 fill  pt-4  ">
+                                                <img class="" src="images/portfolio-02.jpg">
+                                            </div>
+                                            <div class="col-md-6 fill  pt-4 ">
+                                                <img class="" src="images/img_avatar1.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -397,14 +439,12 @@
                     </div><!--**************Feature Tab Ends here***********-->
 
                     <div id="collection" class="tab-pane fade">
-                        <div class="row py-3">
+                        <div class="row py-2">
                             <div class="col-md-12">
-                                <div class="input-group">
-                                    <input  class="all-search-tab" type="text" placeholder="Design">
-                                    <div class="input-group-append">
-                                        <button type="button" class="fa fa-search">
-                                            <span ></span>
-                                        </button>
+                                <div class="form-group" style="display:inline;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-addon common"><button type="button" class="btn fa fa-search"></button></span></span>
                                     </div>
                                 </div>
                             </div>
@@ -455,7 +495,7 @@
                             <div class="row pt-3">
                                 <div class="col-md-8">
                                     <div class="sub-content-header">
-                                       <h>Desing: 18 Collections</h2>
+                                       <h2>Desing: 18 Collections</h2>
                                     </div>
                                 </div>
                                 <div class="col-md-4 text-right">
@@ -518,9 +558,11 @@
 
                         <div class="row">
                             <div class="input-group">
-                                <input  class="all-search-tab" type="text" placeholder=" Design..">
-                                <div class="input-group-append">
-                                    <button type="button" class="fa fa-search"></button>
+                                <div class="form-group" style="display:inline;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-addon common"><button type="button" class="btn fa fa-search"></button></span></span>
+                                    </div>
                                 </div>
                                 <h3>Resource</h3>
                             </div>
@@ -531,13 +573,56 @@
 
 
         </div>
-    </div><!--body Ends -->
+        <div class="col-md-3 my-3">
+            <div class="sidebar-releted-images d-block d-md-none">
+                <div class="widget-main-section px-3 py-3">
+                    <div class="row sidebar-widget-header-top-section">
+                        <div class="col-md-12 ">
+                            <h1 class="widget-header-title 3">Related Groups </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-3 fill py-3 ">
+                            <img class="" src="images/portfolio-02.jpg">
+                        </div>
+                        <div class="col-md-4 col-3 fill py-3 ">
+                            <img class="" src="images/img_avatar1.png">
+                        </div>
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/img_avatar1.png">
+                        </div>
+
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/img_avatar1.png">
+                        </div>
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/portfolio-02.jpg">
+                        </div>
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/portfolio-02.jpg">
+                        </div>
+
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/portfolio-02.jpg">
+                        </div>
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/img_avatar1.png">
+                        </div>
+                        <div class="col-md-4 col-3 fill py-3">
+                            <img class="" src="images/img_avatar1.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer px-4 py-4">
         <div class="row">
             <div class="col-sm-3">
-                <a href="/" class="si-footer" title="Smithsonian Learning Lab">
-                    <img src="images/sll_main_color_left.svg" style="width: 200px; height:auto " />
+                <a href="#" class="footer-logo" title="Smithsonian Learning Lab">
+                    <img src="images/sll_main_color_left.svg" alt="footer logo">
                 </a>
             </div>
             <div class="col-sm-5 pt-3" >
