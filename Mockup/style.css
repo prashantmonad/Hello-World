@@ -25,7 +25,8 @@ body{
 }
 
 .logo{
-    width: 100px;
+    width: 75px;
+    padding-top: 5px;
 }
 /********Navbar end*/
 
@@ -85,7 +86,7 @@ body{
     padding: 0 20px;
 }
 .widget-images{
-    border-top: 1px solid #fff;
+    border-top: 1px solid #fff !important;
 }
 .widget-header-top-description p{
     margin-bottom: 0 !important;
@@ -104,7 +105,7 @@ body{
     object-fit: cover;
 }
 
-.spotlight-images{
+.widget-spotlight-images{
     width: 100%;
 }
 
@@ -175,21 +176,13 @@ body{
 
 
 /*****Tabs*****/
-.nav{
 
-}
 .nav-link{
     background-color: #E1E1E1;
     color: #C0C0C0;
-    font-size: 95%;
     cursor: pointer;
-    border-radius: 0px;
-    width: auto;
-    height: 40px;
-    box-shadow: none;
     outline: none !important;
     text-decoration: none;
-    margin-right: 5px;
 }
 .nav-link:hover{
     color: #C0C0C0;
@@ -234,4 +227,8 @@ body{
 .dropdown.active:after{
     font-family: FontAwesome;
     content: "\f105";
+}
+.btn.about-sidebar{
+    color: #4BC7E7;
+    box-shadow: none;
 }

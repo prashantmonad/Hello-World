@@ -18,10 +18,10 @@
     <div class="top-header-search-section mb-4">
         <div class="row">
             <div class="col-md-8 col-9">
-                <div class="form-group" style="display:inline;">
+                <div class="form-group">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search the Smithsonian learning lab">
-                        <span class="input-group-addon"><button type="button" class="btn fa fa-search"></button></span></span>
+                        <span class="input-group-addon "><button type="button" class="btn fa fa-search"></button></span></span>
                     </div>
                 </div>
             </div>
@@ -57,13 +57,24 @@
                 </div>
                 <div class="row mb-4">
                     <div class="col-md-12 col-12">
-                        <button type="button" class="btn dropdown d-block d-md-none" data-toggle="collapse" data-target="#demo1">About<i class="fa fa-angle-down"></i></button>
-                        <div id="demo" class="collapse">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <button type="button" class="btn about-sidebar d-block d-md-none" data-toggle="collapse" data-target="#demo1">About<i class="fa fa-angle-down"></i></button>
+
+                        <div  id="demo1" class="sidebar-top-description collapse pt-4">
+                            <p>Some text about me in culpa qui officia deserunt
+                                mollit animome text about
+                                me in culpa qui officia deserunt mollit animo
+                                me text about me in culpa his is a
+                                <a href="#">parragraph text about me in culpa</a>
+                            </p>
+                            <p>
+                                qui officia deserunt mollit
+                                anim ome text about me in culpa qui officia deserunt mollit anim
+                                ome text about me in culpa qui officia deserunt mollit an
+                                mollit animome text about
+                            </p>
                         </div>
-                        <div  id="demo1" class="sidebar-top-description collapse show pt-4">
+
+                        <div class="sidebar-top-description d-none d-md-block pt-4">
                             <p>Some text about me in culpa qui officia deserunt
                                 mollit animome text about
                                 me in culpa qui officia deserunt mollit animo
@@ -140,23 +151,24 @@
                     </div>
                 </div>
 
-                <!--<div class="page">-->
-                    <!--<button class="btn active"  data-toggle="tab">Feature</button>-->
-                    <!--<button class="btn"  data-toggle="tab">All collection</button>-->
-                    <!--<button class="btn"  data-toggle="tab">All resources</button>-->
-                <!--</div>-->
-
-                <div class="nav"  role="tablist">
-                    <a class="nav-link active" data-toggle="tab" href="#feature">Feature</a>
-                    <a class="nav-link " data-toggle="tab" href="#collection">All collection</a>
-                   <a class="nav-link" data-toggle="tab" href="#resources">All resources</a>
+                <div class="nav "  role="tablist"> <!-- For Medium Screen Only -->
+                    <a class="nav-link d-none d-md-block active" data-toggle="tab" href="#feature">Featured</a>
+                    <a class="nav-link mx-2 d-none d-md-block" data-toggle="tab" href="#collection">All collection</a>
+                   <a class="nav-link d-none d-md-block" data-toggle="tab" href="#resources">All resources</a>
                 </div>
+
+                <div class="nav nav-fill"  role="tablist"> <!-- For Mobiles Screen Only -->
+                    <a class="nav-item nav-link d-block d-md-none active" data-toggle="tab" href="#feature">Featured</a>
+                    <a class="nav-item nav-link mx-2 d-block d-md-none" data-toggle="tab" href="#collection">Collection</a>
+                    <a class="nav-item nav-link d-block d-md-none" data-toggle="tab" href="#resources">Resources</a>
+                </div>
+
 
                 <div class="tab-content py-3">
                     <div id="feature" class="tab-pane active">
                         <div class="row py-2 pb-3">
                             <div class="col-md-12 col-12">
-                                <div class="form-group" style="display:inline;">
+                                <div class="form-group">
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="Search">
                                         <span class="input-group-addon common"><button type="button" class="btn fa fa-search"></button></span></span>
@@ -170,23 +182,21 @@
                                     <h1 class="widget-spotlight-title px-4 py-3">Spotlight</h1>
                                 </div>
                             </div>
-                            <div class="row px-4 py-3 pb-4">
-                                <div class="col-md-5">
-                                    <img class="spotlight-images" src="images/Spotlight.png">
+                            <div class="row px-4 py-3">
+                                <div class="col-md-5 pb-3">
+                                    <img class="widget-spotlight-images" src="images/Spotlight.png">
                                 </div>
-                                <div class="col-md-7">
-                                    <div class="media ">
-                                            <div class="spotlight-body">
-                                            <h5><strong>Desing Camp 2018</strong></h5>
-                                            <h5><strong>Week 5 Ages 9-12</strong></h5>
-                                            <a href="#">Cooper hewitt education Department<br></a> Design <a href="#">+7</a>
-                                            <p><strong>Thypography Today</strong></p>
-                                            <p>A new "type" of camp activity! Discover the creativity of designing
-                                                type and lettering.From cursive to calligraphy,campers will learn about
-                                                typograpyhy through gallery
-                                                lorem
-                                            </p>
-                                        </div>
+                                <div class="col-md-7 ">
+                                    <div class="spotlight-body">
+                                        <h5><strong>Desing Camp 2018</strong></h5>
+                                        <h5><strong>Week 5 Ages 9-12</strong></h5>
+                                        <a href="#">Cooper hewitt education Department<br></a> Design <a href="#">+7</a>
+                                        <p><strong>Thypography Today</strong></p>
+                                        <p>A new "type" of camp activity! Discover the creativity of designing
+                                            type and lettering.From cursive to calligraphy,campers will learn about
+                                            typograpyhy through gallery
+                                            lorem
+                                        </p>
                                     </div>
                                 </div>
 
