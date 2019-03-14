@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <img src="images/header.png" alt="">
+        <img src="images/learning2.png" alt="">
+        <p>This is my First Alert Using Bootstrap JS</p>
+
+        <div class="alert alert-dismisable alert-success">
+            <button class="close" type="button" data-dismiss="alert">&times;</button>
+            <p><strong>Success</strong> You have gone through it !</p>
+
+        </div>
+        <div class="alert alert-warning alert-dismisable" id="myAlert">
+            <button type="button" class="close" >&times;</button>
+            <p><strong>Warning</strong>You want yo really Close ? </p>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".close").click(function(){
+                    $("#myAlert").alert("close");
+                });
+            });
+        </script>
+        <script>
+            $document.ready(function(){
+                $(".close").click(function(){
+                   $(".myAlert").alert("close");
+                });
+            });
+        </script>
+
+        <div class="bottonToggle">
+            <input type="text" placeholder="Tpye here">
+            <button type="button" class="btn btn-primary">fa fa-search</button>
+        </div>
+    </div>
+
+</body>
+</html>
