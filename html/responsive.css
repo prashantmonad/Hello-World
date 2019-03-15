@@ -33,7 +33,7 @@
 }
 .grid-container > div{
     background-color: black;
-    border: solid 2px black;
+    border: solid 2px red;
     text-align: center;
     font-size: 30px;
 
