@@ -183,6 +183,7 @@ body{
     cursor: pointer;
     outline: none !important;
     text-decoration: none;
+
 }
 .nav-link:hover{
     color: #C0C0C0;
@@ -191,6 +192,10 @@ body{
 .nav-link.active{
     color: #272727;
     border-bottom: solid black;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.nav-link.active:focus {
+    outline: none;
 }
 .sub-content-header-links{
     border: none;
@@ -201,6 +206,7 @@ body{
     font-size: 22px;
     text-decoration: none;
 }
+
 .sub-content-header{
     font-size: 20px;
     font-weight: 700;
