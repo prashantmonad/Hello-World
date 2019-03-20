@@ -14,30 +14,44 @@
 </head>
 <body>
 <div class="container-fluid">
-
     <div class="header" >
-        <div class="row  header py-4" >
-            <div class="col-md-5 col-6">
-                <div class="header-logo">
+        <div class="row header py-4" >
+            <div class="col-md-1 col-sm-1 col-12">
+                <div class="header-logo text-center">
                     <img src="images/logo.png" alt="logo">
-                    TEACHING CALIFORNIYA
-
                 </div>
             </div>
-            <div class="col-md-7 col-6 text-right">
-                <button class="navbar-toggler d-block d-md-none text-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="header-links" id="collapsibleNavbar">
-                    <nav>
+            <div class="col-md-3 col-10">
+                <div class="header-title">
+                    TEACHING CALIFORNIA
+                </div>
+            </div>
+            <div class="col-md-8   col-2 text-right">
+                <button type="button" class="btn text-right expand-button d-block d-md-none" data-toggle="collapse" data-target="#mytab">
+                    <i class="fa fa-bars text-right"></i>
+                </button>       <!-- ************************************************** button Only For Mobile Screen-->
+
+                <div class="header-links">
+                    <div class="sidebar-top-description d-none d-md-block">
                         <a href="#home">Home</a>
                         <a href="#inquary set">Inquary Sets</a>
-                        <a href="#"> Frameworks & Standards</a>
+                        <a href="#"> Frameworks&Standards</a>
                         <a href="#about">About</a>
                         <a href="#news">News</a>
                         <a href="#search"><i class="fa fa-search"></i></a>
-                    </nav>
-
+                    </div>
+                </div>
+            </div>
+            <div  id="mytab" class="header-links mobile text-block collapse pt-4"><!-- Links Only For Mobile Screen-->
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#home">Home</a>
+                        <a href="#inquary set">Inquary Sets</a>
+                        <a href="#"> Frameworks</a>
+                        <a href="#about">About</a>
+                        <a href="#news">News</a>
+                        <a href="#search"><i class="fa fa-search"></i></a>
+                    </div>
 
                 </div>
             </div>
@@ -46,7 +60,7 @@
 
     <div class="main-section">
         <div class="row"><!------ Start Image with Description-->
-            <div class="col-md-6 skip-padding">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-12 skip-padding">
                 <div class="main-section-left-image">
                     <img src="images/leftimage.png" alt="university">
                     <div class="btn-group-vertical btn-share-download">
@@ -57,40 +71,44 @@
 
                 </div>
             </div>
-            <div class="col-md-6 col-12 main-section-left-image-description">
-                    <div class="row">
-                        <div class="col-md-12 text-right skip-padding">
-                            <div class="btn-group top-right-button " >
-                                <button class="btn sensitive-button " ><i class="fa fa-exclamation-triangle">Sensitive Content</i></button>
-                                <button class="btn question-button" ><i class="fa fa-question-circle"></i></button>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-12 main-section-left-image-description">
+                <div class="row">
+                    <div class="col-md-12 text-right skip-padding">
+                        <div class="btn-group top-right-button " >
+                            <button class="btn sensitive-button " ><i class="fa fa-exclamation-triangle">Sensitive Content</i></button>
+                            <button class="btn question-button" ><i class="fa fa-question-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-5 ">
+                    <div class="col-md-12 col-12 skip-padding">
+                        <div class="main-section-left-image-description-body">
+                            <div class="row description-header">
+                                <h2><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            </div>
+                            <div class="row description-author">
+                                <h3><strong>Jone Doe,John Smith</strong></h3>
+                            </div>
+                            <div class="row description-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                  Adipisci at beatae doloremque ducimus,consectetur adipisicing elit.
+                                  Adipisci at beatae doloremque ducimus, hic maiores minus odio officiis pariatur,
+                                  qui rem repellendus reprehenderit, sapiente! Aspernatur eveniet nulla rerum sequi voluptas!
+
+                              </p>
+                            </div>
+                            <div class="row description-links">
+                                <a href="">Standard</a>
+                                <a href="">Standard</a>
+                                <a href="">Standard</a>
+                            </div>
+                            <div class="main-section-left-image-description-tag">
+                                <button class=" tag-button">Tag 1</button>
+                                <button class="tag-button">Tag 2</button>
+                                <button class="tag-button">Tag 3</button>
                             </div>
                         </div>
                     </div>
-                    <div class="row px-5 ">
-                        <div class="col-md-12 col-12">
-                            <div class="main-section-left-image-description-body ">
-                                <div class="row description-header">
-                                    <h2><strong>Lorem ipsum dolor sit amet</strong></h2>
-                                </div>
-                                <div class="row description-author">
-                                    <h3><strong>Jone Doe,John Smith</strong></h3>
-                                </div>
-                                <div class="row description-body">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at beatae doloremque ducimus, hic maiores minus odio officiis pariatur, qui rem repellendus reprehenderit, sapiente! Aspernatur eveniet nulla rerum sequi voluptas!</p>
-                                </div>
-                                <div class="row description-links">
-                                    <a href="">Standard</a>
-                                    <a href="">Standard</a>
-                                    <a href="">Standard</a>
-                                </div>
-                                <div class="main-section-left-image-description-tag">
-                                    <button class=" tag-button">Tag 1</button>
-                                    <button class="tag-button">Tag 2</button>
-                                    <button class="tag-button">Tag 3</button>
-                                </div>
-                            </div>
-                        </div>
-
                 </div>
             </div>
         </div><!------ End Image with Description-->
@@ -112,12 +130,12 @@
                             </div>
                             <div class="col-md-8 skip-padding">
                                 <div class="row ">
-                                    <div class="col-md-12  text-right skip-padding">
+                                    <div class="col-md-12  text-right p-4 ">
                                         <h2>Lorem ipsum dolor sit amet, consectetur ?</h2>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12 text-right skip-padding">
+                                    <div class="col-md-12 text-right p-4">
                                         <div class="show-answer ">
                                             <button type="button" class="show-answer-button" data-toggle="collapse" data-target="#demo1">FRAMEWORK EXPERT<i class="fa fa-angle-down"></i></button>
                                         </div>
@@ -195,7 +213,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 skip-padding">
+            <div class="col-md-12 col-12 skip-padding">
                 <div class="nav nav-fill "  role="tablist">
                     <a class="nav-item nav-link  active " data-toggle="tab" href="#teacher">TEACHER BACKGROUND </a>
                     <a class="nav-item nav-link" data-toggle="tab" href="#student">STUDENT BACKGROUND</a>
@@ -203,12 +221,11 @@
                     <a class="nav-item nav-link" data-toggle="tab" href="#extention">EL EXTENTION</a>
                 </div>
             </div>
-
         </div>
 
 
         <div class="background-tab tab-content pt-4 mt-5">
-            <div id="teacher" class=" tab-pane active">
+            <div id="teacher" class=" tab-pane active ">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -238,34 +255,36 @@
             <div id="extention" class="container tab-pane fade"><br>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
-            <div class="read-more text-right pr-5">
+            <div class="read-more text-right pr-5 pb-5">
                 <button  class="btn" type="button" >ReadMore</button>
             </div>
         </div>
 
 
-
-        <div class="row">
-            <div class="col-md-4 skip-padding">
-                <hr class="left-line">
-            </div>
-            <div class="col-md-4 skip-padding text-center">
-                <div class="inquiry-title" >
-                    <h3>Related Inquiry Sets</h3>
-                </div>
-            </div>
-            <div class="col-md-4 skip-padding">
-                <hr class="right-line">
-            </div>
-        </div>
         <div class="inquiry-image-sets">
-
-            <div class="row skip-padding">
-                <div class="col-md-4 ">
-                    <div class="widget m-5 p-5">
+            <div class="row skip-padding fill-bg-color">
+                <div class="col-md-4 skip-padding ">
+                    <div class="row d-none d-md-block">
+                        <div class="col-md-12">
+                            <hr class="left-line d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 skip-padding text-center">
+                    <div class="inquiry-title" >
+                        <h3>Related Inquiry Sets</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 skip-padding">
+                    <hr class="right-line d-none d-md-block">
+                </div>
+            </div>
+            <div class="row  inquiry-sets skip-padding">
+                <div class="col-md-4 col-12">
+                    <div class="widget  p-4">
                         <div class="row">
-                            <div class="col-md-12">
-                                <button class="btn grade-button p-3 ">Grade 3</button>
+                            <div class="col-md-12 col-12">
+                                <button class="btn grade-button ">Grade 3</button>
                                 <img class="related-image" src="images/middle-img.png" alt="">
                             </div>
                         </div>
@@ -279,10 +298,10 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="widget m-5 p-5">
+                    <div class="widget  p-4">
                         <div class="row">
-                            <div class="col-md-12">
-                                <button class="btn grade-button p-3 ">Grade 3</button>
+                            <div class="col-md-12 col-12">
+                                <button class="btn grade-button ">Grade 3</button>
                                 <img class="related-image" src="images/middle-img.png" alt="">
                             </div>
                         </div>
@@ -296,11 +315,11 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="widget m-5 p-5">
+                    <div class="widget  p-4">
                         <div class="row">
-                            <div class="col-md-12">
-                                <button class="btn grade-button p-3 ">Grade 3</button>
-                                <img class="related-image" src="images/img3.png" alt="">
+                            <div class="col-md-12 col-12">
+                                <button class="btn grade-button ">Grade 3</button>
+                                <img class="related-image" src="images/middle-img.png" alt="">
                             </div>
                         </div>
                         <div class="row ">
@@ -316,27 +335,25 @@
         </div>
     </div>
 
-    <div class="footer" >
-        <div class="row footer p-5">
-            <div class="col-md-6 skip-padding text-left">
+    <div class="footer " >
+        <div class="row footer p-4">
+            <div class="col-md-6 col-12 skip-padding text-left p-4">
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#inquary set">About</a>
                     <a href="#"> Acknowlegements</a>
                 </div>
             </div>
-            <div class="col-md-6 skip-padding text-right">
+            <div class="col-md-6 col-12 skip-padding text-right">
                 <div class="footer-social-links ">
-                    <a href="#" class="fa fa-facebook fa-2x "></a>
-                    <a href="#" class="fa fa-twitter fa-2x"></a>
-                    <a href="#" class="fa fa-instagram fa-2x"></a>
-                    <a href="#" class="fa fa-flickr fa-2x"></a>
+                    <a href="#" class="fa fa-facebook fa-2x pr-4"></a>
+                    <a href="#" class="fa fa-twitter fa-2x pr-4"></a>
+                    <a href="#" class="fa fa-instagram fa-2x pr-4"></a>
+                    <a href="#" class="fa fa-flickr fa-2x pr-4"></a>
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>
 </body>
 </html>

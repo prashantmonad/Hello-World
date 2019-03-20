@@ -1,8 +1,9 @@
 .header {
     background-color: #2B4149;
     color:#FFCD3E;
-    font-size: 34px;
-
+}
+div{
+    border: red thin ;
 }
 
 .header-logo img{
@@ -10,14 +11,26 @@
 }
 .header-links{
 }
+.header-title {
+    font-size: 23px;
+    font-weight: 900;
+}
+.expand-button{
+    color: #FFCD3E;
+    alignment: right!important;
+}
 .header-links a {
     text-align: center;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFCD3E;
-    padding: 15px;
+    padding: 5px;
 }
 
+.header-links.mobile a {
+    font-size: 16px;
+      padding: 2px;
+}
 
 .main-section-left-image img{
     width: 100%;
@@ -102,6 +115,8 @@
 .main-section-left-image-description{
     color:#ffffff;
     background-color: #476B7D;
+    max-height: 633px;
+    overflow-y: auto;
 }
 .main-section-left-image-description-body{
 
@@ -143,6 +158,8 @@
     background-color: #5F182A;
     color: white;
     font-size: 24px;
+    max-height: 480px;
+    overflow-y: auto;
 
 }
 .investigative-triangle {
@@ -171,6 +188,8 @@
 }
 .background-tab{
     font-size: 30px;
+    max-height: 660px;
+    overflow-y: auto;
 }
 .tab-pane{
     padding: 4%;
@@ -179,7 +198,7 @@
     display: inline;
     background-color: #DFDFDF ;
     color: #B3B3B3;
-    padding: 20px 30px;
+    padding: 20px 33px;
     position: relative;
 }
 .nav-link:hover{
@@ -190,7 +209,10 @@
     color: white;
     box-shadow: 0 1rem 3rem rgba(0,0,0,0.4)!important;
 }
-.nav-item.active:after {
+
+@media only screen and (min-width: 600px){
+    .nav-item.active:after {
+
     width: 0;
     height: 0;
     border-left: 65px solid transparent;
@@ -202,6 +224,7 @@
     left: 35%;
     filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4));
 
+    }
 }
 .read-more .btn{
     background-color: #2D4046 ;
@@ -211,23 +234,29 @@
 }
 .inquiry-title{
     font-size: 24px;
-    padding: 10px;
+    padding: 12px;
     background-color: #851939 ;
     color: white;
 }
-
-.inquiry-image-sets{
-
+.inquiry-image-sets , .inquiry-sets , .fill-bg-color {
+    background-color: #476B7D;
 }
+
 .left-line{
-    border-top: 30px solid #CD6226 ;
-    /*border-bottom: 20px solid #486D7E !important;*/
+    height:30px;
+    background-color: #CD6226;
+    border-top: 15px solid white !important;
+    margin: 0;
 
 }
 .right-line {
+    height:30px;
+    background-color: #AF2853;
+    border-top: 15px solid white !important;
+    margin: 0;
+}
+.fill-bg-color{
 
-    border-top: 30px solid #AF2853;
-    /*border-bottom: 20px solid #486D7E !important;*/
 }
 
 .related-image {
