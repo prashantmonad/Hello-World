@@ -15,42 +15,41 @@
 <body>
 <div class="container-fluid">
     <div class="header" >
-        <div class="row header py-4" >
-            <div class="col-md-1 col-sm-1 col-12">
+        <div class="row header py-4 text-center" style="align-items: center;" >
+            <div class=" col-xl-1 col-md-1  col-sm-1 col-12">
                 <div class="header-logo text-center">
                     <img src="images/logo.png" alt="logo">
                 </div>
             </div>
-            <div class="col-md-3 col-10">
+            <div class="col-xl-1 col-md-2 col-10">
                 <div class="header-title">
                     TEACHING CALIFORNIA
                 </div>
             </div>
-            <div class="col-md-8   col-2 text-right">
+            <div class=" col-md-9   col-2 text-right">
                 <button type="button" class="btn text-right expand-button d-block d-md-none" data-toggle="collapse" data-target="#mytab">
                     <i class="fa fa-bars text-right"></i>
                 </button>       <!-- ************************************************** button Only For Mobile Screen-->
 
-                <div class="header-links">
-                    <div class="sidebar-top-description d-none d-md-block">
-                        <a href="#home">Home</a>
-                        <a href="#inquary set">Inquary Sets</a>
-                        <a href="#"> Frameworks&Standards</a>
-                        <a href="#about">About</a>
-                        <a href="#news">News</a>
-                        <a href="#search"><i class="fa fa-search"></i></a>
-                    </div>
+                <div class="nav  header-links d-none d-md-block" role="tablist">
+                    <a  href="#home" data-toggle="tab">Home</a>
+                    <a class="active" href="#inquary set" data-toggle="tab">Inquary Sets</a>
+                    <a href="#" data-toggle="tab"> Frameworks&Standards</a>
+                    <a href="#about" data-toggle="tab">About</a>
+                    <a href="#news" data-toggle="tab">News</a>
+                    <a href="#search" data-toggle="tab"><i class="fa fa-search"></i></a>
                 </div>
             </div>
-            <div  id="mytab" class="header-links mobile text-block collapse pt-4"><!-- Links Only For Mobile Screen-->
+
                 <div class="row">
                     <div class="col-12">
-                        <a href="#home">Home</a>
-                        <a href="#inquary set">Inquary Sets</a>
-                        <a href="#"> Frameworks</a>
-                        <a href="#about">About</a>
-                        <a href="#news">News</a>
-                        <a href="#search"><i class="fa fa-search"></i></a>
+                        <div  id="mytab" class=" nav header-links mobile text-block collapse pt-4" role="tablist"><!-- Links Only For Mobile Screen-->
+                        <a href="#home" data-toggle="tab">Home</a>
+                        <a class="active" href="#inquary set" data-toggle="tab">Inquary Sets</a>
+                        <a href="#" data-toggle="tab"> Frameworks</a>
+                        <a href="#about" data-toggle="tab">About</a>
+                        <a href="#news" data-toggle="tab">News</a>
+                        <a href="#search"  data-toggle="tab"><i class="fa fa-search"></i></a>
                     </div>
 
                 </div>
@@ -98,14 +97,14 @@
                               </p>
                             </div>
                             <div class="row description-links">
-                                <a href="">Standard</a>
-                                <a href="">Standard</a>
-                                <a href="">Standard</a>
+                                <a class=" tag-link mr-2 mt-3" href="">Standard</a>
+                                <a class=" tag-link mr-2 mt-3" href="">Standard</a>
+                                <a class=" tag-link mr-2 mt-3" href="">Standard</a>
                             </div>
                             <div class="main-section-left-image-description-tag">
-                                <button class=" tag-button">Tag 1</button>
-                                <button class="tag-button">Tag 2</button>
-                                <button class="tag-button">Tag 3</button>
+                                <button class=" tag-button mr-3 mt-3">Tag 1</button>
+                                <button class="tag-button mr-3 mt-3">Tag 2</button>
+                                <button class="tag-button mr-3 mt-3">Tag 3</button>
                             </div>
                         </div>
                     </div>
@@ -170,7 +169,7 @@
                             <div class="row">
                                 <div class="col-md-12 text-right py-4">
                                     <div class="show-answer  ">
-                                        <button type="button" class="show-answer-button" data-toggle="collapse" data-target="#demo1">CLOSE<i class="fa fa-angle-up"></i></button>
+                                        <button type="button" class="show-answer-button mr-5" data-toggle="collapse" data-target="#demo1">CLOSE<i class="fa fa-angle-up"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -213,11 +212,11 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 col-12 skip-padding">
+            <div class="col-md-12  skip-padding">
                 <div class="nav nav-fill "  role="tablist">
                     <a class="nav-item nav-link  active " data-toggle="tab" href="#teacher">TEACHER BACKGROUND </a>
                     <a class="nav-item nav-link" data-toggle="tab" href="#student">STUDENT BACKGROUND</a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#learnig">LEARNING GIUDE</a>
+                    <a class="nav-item nav-link " data-toggle="tab" href="#learnig">LEARNING GUIDE</a>
                     <a class="nav-item nav-link" data-toggle="tab" href="#extention">EL EXTENTION</a>
                 </div>
             </div>
@@ -263,34 +262,35 @@
 
         <div class="inquiry-image-sets">
             <div class="row skip-padding fill-bg-color">
-                <div class="col-md-4 skip-padding ">
+                <div class="col-xl-4 col-lg-4 col-md-3 skip-padding ">
                     <div class="row d-none d-md-block">
                         <div class="col-md-12">
                             <hr class="left-line d-none d-md-block">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 skip-padding text-center">
+                <div class="col-xl-4  col-md-6 skip-padding text-center">
                     <div class="inquiry-title" >
                         <h3>Related Inquiry Sets</h3>
                     </div>
                 </div>
-                <div class="col-md-4 skip-padding">
+                <div class="col-xl-4 col-lg-4 col-md-3 skip-padding">
                     <hr class="right-line d-none d-md-block">
                 </div>
             </div>
-            <div class="row  inquiry-sets skip-padding">
-                <div class="col-md-4 col-12">
-                    <div class="widget  p-4">
+
+            <div class="row  inquiry-sets p-xl-5">
+                <div class="col-md-4 ">
+                    <div class="widget p-3 ">
                         <div class="row">
-                            <div class="col-md-12 col-12">
+                            <div class="col-xl-12 col-lg-12  col-md-12 col-12 px-xl-5">
                                 <button class="btn grade-button ">Grade 3</button>
                                 <img class="related-image" src="images/middle-img.png" alt="">
                             </div>
                         </div>
                         <div class="row ">
-                            <div class="col-md-12">
-                                <div class="related-image-text shadow-lg">
+                            <div class="col-xl-12 col-lg-12  col-md-12 col-12 px-xl-5">
+                                <div class="related-image-text shadow-lg px-xl-5 ">
                                     <strong> Lorem ipsum dolor sit amet, consect </strong>
                                 </div>
                             </div>
@@ -298,16 +298,16 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="widget  p-4">
+                    <div class="widget p-3 ">
                         <div class="row">
-                            <div class="col-md-12 col-12">
+                            <div class="col-xl-12 col-lg-12  col-md-12 col-12 px-xl-5">
                                 <button class="btn grade-button ">Grade 3</button>
                                 <img class="related-image" src="images/middle-img.png" alt="">
                             </div>
                         </div>
                         <div class="row ">
-                            <div class="col-md-12">
-                                <div class="related-image-text shadow-lg">
+                            <div class="col-xl-12 col-lg-12  col-md-12 col-12 px-xl-5">
+                                <div class="related-image-text shadow-lg px-xl-5 ">
                                     <strong> Lorem ipsum dolor sit amet, consect </strong>
                                 </div>
                             </div>
@@ -315,16 +315,16 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="widget  p-4">
+                    <div class="widget p-3 ">
                         <div class="row">
-                            <div class="col-md-12 col-12">
+                            <div class="col-xl-12 col-lg-12  col-md-12 col-12 px-xl-5">
                                 <button class="btn grade-button ">Grade 3</button>
                                 <img class="related-image" src="images/middle-img.png" alt="">
                             </div>
                         </div>
                         <div class="row ">
-                            <div class="col-md-12">
-                                <div class="related-image-text shadow-lg">
+                            <div class="col-xl-12 col-lg-12  col-md-12 col-12 px-xl-5">
+                                <div class="related-image-text shadow-lg px-xl-5 ">
                                     <strong> Lorem ipsum dolor sit amet, consect </strong>
                                 </div>
                             </div>
@@ -332,24 +332,24 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-
     <div class="footer " >
-        <div class="row footer p-4">
-            <div class="col-md-6 col-12 skip-padding text-left p-4">
+        <div class="row footer py-4">
+            <div class="col-md-7 col-12 skip-padding text-center text-md-left py-4">
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#inquary set">About</a>
-                    <a href="#"> Acknowlegements</a>
+                    <a class="pl-xl-5 pl-md-3" href="#home">Home</a>
+                    <a class="pl-xl-5 pl-md-3" href="#inquary set">About</a>
+                    <a class="pl-xl-5 pl-md-3" href="#"> Acknowlegments</a>
                 </div>
             </div>
-            <div class="col-md-6 col-12 skip-padding text-right">
+            <div class="col-md-5 col-12 py-4 text-center text-md-right">
                 <div class="footer-social-links ">
-                    <a href="#" class="fa fa-facebook fa-2x pr-4"></a>
-                    <a href="#" class="fa fa-twitter fa-2x pr-4"></a>
-                    <a href="#" class="fa fa-instagram fa-2x pr-4"></a>
-                    <a href="#" class="fa fa-flickr fa-2x pr-4"></a>
+                    <a href="#" class="fa fa-facebook fa-2x pr-xl-5 pr-3"></a>
+                    <a href="#" class="fa fa-twitter fa-2x pr-xl-5 px-3"></a>
+                    <a href="#" class="fa fa-instagram fa-2x pr-xl-5 px-3"></a>
+                    <a href="#" class="fa fa-flickr fa-2x pr-xl-5 pl-3"></a>
                 </div>
             </div>
         </div>
