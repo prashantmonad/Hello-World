@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScripts</title>
+
+</head>
+<body>
+<h2>This is First Script :</h2>
+
+<button type="button" onclick="getElementById('demo').innerHTML=Date()">
+    Click me
+</button>
+<p id="demo"> </p>
+
+<!--********************-->
+<button type="button" onclick="getElementById('content').innerHTML='this is New Content'"> Change Content</button>
+<p id="content">This is old content  </p>
+
+<!--**********************-->
+<button type="button" onclick="myFunctionOn()"> Turn On Bulb</button>
+<img  id="on" src="images/pic_bulboff.gif" alt="" width="100px">
+
+<button type="button" onclick="myFunctionOff()"> Turn Off Bulb</button>
+<script>
+    function myFunctionOn(){
+        document.getElementById('on').src="images/pic_bulbon.gif"
+    }
+    function myFunctionOff(){
+        document.getElementById('on').src="images/pic_bulboff.gif"
+    }
+</script>
+
+<!--******************************-->
+<br><br><br>
+<button  onclick="getElementById('on').style.width='200px'"> change size </button>
+<button  onclick="getElementById('on').style.width='100px'"> Original size</button>
+
+<!--****************Hide & Show******************-->
+<br><br>
+<img id="show" src="images/pic_bulbon.gif" alt="onBulb" width="100px" style="display: none">
+<button onclick="getElementById('show').style.display='block'"> Show </button>
+<button type="button" onclick="showHide()" >show hide </button>
+<script>
+        function showHide(){
+            document.getElementById('show').style.display='none';
+        }
+</script>
+
+<!--****************Scripts Location (Where to :)************-->
+<script src="myScript.js"></script>
+<button type="button" onclick="externalPara()">Change with External</button>
+<p id="changePara">good Morning</p>
+
+
+<p>*******JS Output**********</p>
+<button type="button" onclick="output()">Check Output</button>
+<p  id="opt">Good Morning</p>
+<script>
+    var currentTime = new Date(),
+        hours = currentTime.getHours(),
+        minutes = currentTime.getMinutes();
+
+    // Add a leading zero if needed
+    if (minutes < 10) {
+        minutes  = "0" + minutes;
+    }
+
+    // Join the parts
+    time = hours + ":" + minutes;
+    function output(){
+        document.getElementById('opt').innerHTML='Good Afternooon is '+ time
+    }
+</script>
+<!--<button type="button" onclick="document.write(11  + 6)">Write on Page</button>-->
+
+<!--****************Alert**********-->
+<p id = "add">Additon: </p>
+<button type="button" onclick="addition()">Alert Addition(5+6)</button>
+
+<script>
+    function addition(){
+        document.getElementById('add').innerHTML= ''+window.alert(5+6)
+    }
+
+</script>
+<!--********console output************-->
+<script>
+    console.log(5 + 6);
+</script>
+<!--*******Programming**********-->
+<p>*************Programs**************</p>
+
+<p id="number"></p>
+
+<script>
+    document.getElementById("number").innerHTML = 10.5+'hello'+"World";
+</script>
+
+
+
+<!--<input type="text" id="num1" placeholder="number1">+
+<input type="text" id="num2" placeholder="number3">
+<button type="button" onclick="math()">Sum</button>=
+<p id="result"></p>
+<script>
+    var num1= document.getElementById('num1');
+    var num1= document.getElementById('num2');
+
+    function math(){
+        document.getElementById('result').innerHTML=num1
+    }
+
+</script>-->
+<!--***************Data Type Examples***********-->
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="sequenceBefore"></p>
+<p id="sequenceAfter"></p>
+<p id="num"></p>
+<p id="array"></p>
+
+<script>
+    var x = 16 + 4 + "RedMi";
+    document.getElementById("sequenceBefore").innerHTML = x;
+    var x =  "RedMi" + 16 + 4;
+    document.getElementById("sequenceAfter").innerHTML = x;
+    var x1 = 34.003;     // Written with decimals
+    var x2 = 34;        // Written without decimals
+    document.getElementById('num').innerHTML = x1+"<br>"+x2;
+    var empName = ["prashant","pradip","raj"];
+    for(i=0;i<5;i++){
+        empName= empName[i];
+    }
+    document.getElementById('array').innerHTML = empName;
+
+</script>
+
+<!--********************Function****************-->
+<p>**************Function****************</p>
+
+<p id="function"></p>
+
+<script>
+    document.getElementById("function").innerHTML =
+        "The Avarage is " + percentage () + "%";
+
+    function percentage() {
+        return (80+80+90) / 3;
+    }
+</script>
+<p>***************Objects ***************</p>
+<p id="obj"> </p>
+<p>*******An object method is a function definition*****</p>
+<p id="objMethod"></p>
+<script>
+    var person = {
+        firstName:"monad", lastName:"infotech",  type:"pvt.ltd.",
+        fullName : function(){
+            // return this.firstName +" "+ this.lastName ;
+            return this.firstName + " " + this.lastName + " " +this.type
+    }
+
+    };
+
+    document.getElementById("obj").innerHTML = "Welcome to  " + person.firstName +" "+person.lastName +" "+ person["type"] +" "+ "Family"
+    document.getElementById("objMethod").innerHTML =  person.fullName();
+</script>
+<p>**********Events*******</p>
+<button onclick="whatTime()"> Check time</button>
+<p id="time"></p>
+<script>
+    function whatTime(){
+        document.getElementById("time").innerHTML=Date();
+    }
+</script>
+<button onclick="this.innerHTML=Date()">Check Time on Button</button>
+</body>
+</html>
