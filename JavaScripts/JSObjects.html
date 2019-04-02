@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Objects</title>
+</head>
+<body>
+<p id="newObj"></p>
+<p id="copyObjChange"></p>
+
+<p>********JS Object Property************</p>
+<p id="loopObj"></p>
+<p id="deleteObj"></p>
+
+<p>************* JavaScript Accessors (Getters and Setters) ***************</p>
+<p id="getter"></p>
+<p id="setter"></p>
+
+<script>
+    var person = new Object();
+    person.firstName="Prashant";
+    person.lastName="Ghodeswar";
+    person.age="21";
+
+    document.getElementById('newObj').innerHTML=person.firstName+" "+person.lastName+person.age;
+
+    var x= person;
+    x.age=25;
+    document.getElementById('copyObjChange').innerHTML=person.firstName+" "+person.lastName+" "+person.age;
+
+    var txt = "";
+    var person = {fname:"Pradip", lname:"Ghodeswar", age:22};
+    var x;
+    for (x in person) {
+        txt += person[x] + " ";
+    }
+    document.getElementById("loopObj").innerHTML = txt;
+    delete person.age;
+    document.getElementById("deleteObj").innerHTML = person.age;
+
+    //*****************Getter And Setter**********
+
+    var person = {
+        firstName: "Prashant",
+        lastName : "Ghodeswar",
+        language : "Marathi",
+        get lang() {
+            return this.language.toUpperCase();;
+
+        },
+        set fname(value){
+            this.firstName=value;
+        }
+    };
+    // Display data from the object using a getter:
+    document.getElementById("getter").innerHTML ="LAnguage by Getter :"+ person.lang;
+    person.firstName="raj"
+    document.getElementById("setter").innerHTML = person.firstName
+</script>
+<p>*********************Counter******</p>
+<p id="counter"></p>
+
+<script>
+    var obj = {
+        counter : 0,
+        get reset() {
+            this.counter = 0;
+        },
+        get increment() {
+            this.counter++;
+        },
+        get decrement() {
+            this.counter--;
+        },
+        set add(value) {
+            this.counter += value;
+        },
+        set subtract(value) {
+            this.counter -= value;
+        }
+    };
+    obj.reset;
+    obj.add = 5;
+    obj.subtract = 4;
+    obj.increment;
+    obj.decrement;
+
+    document.getElementById("counter").innerHTML = obj.counter;
+</script>
+<p>**************Object Constructor</p>
+<p id="demo"></p>
+<p id="ownProperity"></p>
+
+<script>
+    function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+    }
+
+
+    var myInfo = new Person("Prashant", "Ghodeswar", 25);
+
+
+    document.getElementById("demo").innerHTML =
+        "I am " + myInfo.age + ".";
+    document.getElementById("ownProperity").innerHTML = Object.getOwnPropertyNames(person);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScripts</title>
+
+</head>
+<body>
+<h2>This is First Script :</h2>
+
+<button type="button" onclick="getElementById('demo').innerHTML=Date()">
+    Click me
+</button>
+<p id="demo"> </p>
+
+<!--********************-->
+<button type="button" onclick="getElementById('content').innerHTML='this is New Content'"> Change Content</button>
+<p id="content">This is old content  </p>
+
+<!--**********************-->
+<button type="button" onclick="myFunctionOn()"> Turn On Bulb</button>
+<img  id="on" src="images/pic_bulboff.gif" alt="" width="100px">
+
+<button type="button" onclick="myFunctionOff()"> Turn Off Bulb</button>
+<script>
+    function myFunctionOn(){
+        document.getElementById('on').src="images/pic_bulbon.gif"
+    }
+    function myFunctionOff(){
+        document.getElementById('on').src="images/pic_bulboff.gif"
+    }
+</script>
+
+<!--******************************-->
+<br><br><br>
+<button  onclick="getElementById('on').style.width='200px'"> change size </button>
+<button  onclick="getElementById('on').style.width='100px'"> Original size</button>
+
+<!--****************Hide & Show******************-->
+<br><br>
+<img id="show" src="images/pic_bulbon.gif" alt="onBulb" width="100px" style="display: none">
+<button onclick="getElementById('show').style.display='block'"> Show </button>
+<button type="button" onclick="showHide()" >show hide </button>
+<script>
+        function showHide(){
+            document.getElementById('show').style.display='none';
+        }
+</script>
+
+<!--****************Scripts Location (Where to :)************-->
+<script src="myScript.js"></script>
+<button type="button" onclick="externalPara()">Change with External</button>
+<p id="changePara">good Morning</p>
+
+
+<p>*******JS Output**********</p>
+<button type="button" onclick="output()">Check Output</button>
+<p  id="opt">Good Morning</p>
+<script>
+    var currentTime = new Date(),
+        hours = currentTime.getHours(),
+        minutes = currentTime.getMinutes();
+
+    // Add a leading zero if needed
+    if (minutes < 10) {
+        minutes  = "0" + minutes;
+    }
+
+    // Join the parts
+    time = hours + ":" + minutes;
+    function output(){
+        document.getElementById('opt').innerHTML='Good Afternooon is '+ time
+    }
+</script>
+<!--<button type="button" onclick="document.write(11  + 6)">Write on Page</button>-->
+
+<!--****************Alert**********-->
+<p id = "add">Additon: </p>
+<button type="button" onclick="addition()">Alert Addition(5+6)</button>
+
+<script>
+    function addition(){
+        document.getElementById('add').innerHTML= ''+window.alert(5+6)
+    }
+
+</script>
+<!--********console output************-->
+<script>
+    console.log(5 + 6);
+</script>
+<!--*******Programming**********-->
+<p>*************Programs**************</p>
+
+<p id="number"></p>
+
+<script>
+    document.getElementById("number").innerHTML = 10.5+'hello'+"World";
+</script>
+
+
+
+<!--<input type="text" id="num1" placeholder="number1">+
+<input type="text" id="num2" placeholder="number3">
+<button type="button" onclick="math()">Sum</button>=
+<p id="result"></p>
+<script>
+    var num1= document.getElementById('num1');
+    var num1= document.getElementById('num2');
+
+    function math(){
+        document.getElementById('result').innerHTML=num1
+    }
+
+</script>-->
+<!--***************Data Type Examples***********-->
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="sequenceBefore"></p>
+<p id="sequenceAfter"></p>
+<p id="num"></p>
+<p id="array"></p>
+
+<script>
+    var x = 16 + 4 + "RedMi";
+    document.getElementById("sequenceBefore").innerHTML = x;
+    var x =  "RedMi" + 16 + 4;
+    document.getElementById("sequenceAfter").innerHTML = x;
+    var x1 = 34.003;     // Written with decimals
+    var x2 = 34;        // Written without decimals
+    document.getElementById('num').innerHTML = x1+"<br>"+x2;
+    var empName = ["prashant","pradip","raj"];
+    for(i=0;i<5;i++){
+        var empName= empName[i];
+    }
+    document.getElementById('array').innerHTML = empName;
+
+</script>
+
+<!--********************Function****************-->
+<p>**************Function****************</p>
+
+<p id="function"></p>
+
+<script>
+    document.getElementById("function").innerHTML =
+        "The Avarage is " + percentage () + "%";
+
+    function percentage() {
+        return (80+80+90) / 3;
+    }
+</script>
+<p>***************Objects ***************</p>
+<p id="obj"> </p>
+<p>*******An object method is a function definition*****</p>
+<p id="objMethod"></p>
+<script>
+    var person = {
+        firstName:"monad", lastName:"infotech",  type:"pvt.ltd.",
+        fullName : function(){
+            // return this.firstName +" "+ this.lastName ;
+            return this.firstName + " " + this.lastName + " " +this.type
+    }
+
+    };
+
+    document.getElementById("obj").innerHTML = "Welcome to  " + person.firstName +" "+person.lastName +" "+ person["type"] +" "+ "Family"
+    document.getElementById("objMethod").innerHTML =  person.fullName();
+</script>
+<p>**********Events*******</p>
+<button onclick="whatTime()"> Check time</button>
+<p id="time"></p>
+<script>
+    function whatTime(){
+        document.getElementById("time").innerHTML=Date();
+    }
+</script>
+<button onclick="this.innerHTML=Date()">Check Time on Button</button>
+
+<!--***************JS String**************-->
+<p> ******************JS String*****************</p>
+<p  id="str"> </p>
+<p id="strSpecial"> </p>
+<p id="strSingleQuote"> </p>
+<p id="strObject"></p>
+
+<script>
+    var x= "Good Morning"
+    document.getElementById("str").innerHTML="Lenght of '"+x+"' : "+ x.length;
+
+    var y ="This is \"Special character \" in JavaScript";
+    document.getElementById("strSpecial").innerHTML=y;
+
+    var z= 'It\'s JavaScript Single quote character';
+    document.getElementById("strSingleQuote").innerHTML=z;
+
+    var s = "JavaScript";  //s is String
+    var s1 = new  String("JavaScript");  // s1 is Object
+    document.getElementById("strObject").innerHTML=s +" type is : "+ typeof x +"<br>"+s1+" Type is : "+typeof s1;
+</script>
+<p>*****************JS String Method***********</p>
+
+<p id="indexOf"></p>
+<p id="indexOfFlase"></p>
+<p id="lastIndex"></p>
+<p ID="search"></p>
+<p id="slice"></p>
+<p id="sliceReverse"> </p>
+<p id="subString"></p>
+<p id="replace">Welcome to  Monad infotech Family welcome</p>
+<button onclick="myReplace()">Replace</button>
+<p id="upperCase"></p>
+<p  id="lowerCase"></p>
+<p id="charAt"></p>
+<p id="charCodeAt"></p>
+<p id="strArray"> </p>
+<script>
+    var s = "This is Monad infotech";
+
+
+    document.getElementById('indexOf').innerHTML="Index Of Monad is : "+s.indexOf('Monad');
+    document.getElementById('indexOfFlase').innerHTML="Index Of monad is : "+s.indexOf('monad');
+    document.getElementById('lastIndex').innerHTML="Last Index Of Monad is : "+s.lastIndexOf('M');
+
+
+    document.getElementById("search").innerHTML ="Search position Monad is : "+ s.search('Monad');
+
+    document.getElementById('slice').innerHTML="Slice is : "+s.slice(7,23);
+    document.getElementById('sliceReverse').innerHTML="Slice is : "+s.slice(-10);
+
+    document.getElementById('subString').innerHTML = "Substring is : "+ s.substring(14,7);
+    
+    function  myReplace() {
+        var str = document.getElementById('replace').innerHTML;
+        var txt = str.replace("Welcome","New Welcome ");
+        document.getElementById('replace').innerHTML=txt;
+    }
+
+    document.getElementById('upperCase').innerHTML=s.toUpperCase();
+    document.getElementById('lowerCase').innerHTML=s.toLowerCase();
+
+    document.getElementById('charAt').innerHTML=s.charAt(1);
+    document.getElementById('charCodeAt').innerHTML=s.charCodeAt(1);
+
+
+    var str = "a,b,c,d,e,f";
+    var arr = str.split("");
+    document.getElementById("strArray").innerHTML = arr;
+</script>
+
+<!-----------JS Numbers------------>
+<p>******************JS Numbers**********************</p>
+<p id="num1"></p>
+
+
+<script>
+    var a = 3.14;
+    var b = 10;
+    var c = 123e4;
+    var d = 1234e-6
+    document.getElementById('num1').innerHTML=a+"<br>"+b+"<br>"+c+"<br>"+d;
+
+</script>
+<p id="infinity"></p>
+
+<script>
+    var myNumber = 2    ;
+    var txt = "";
+    while (myNumber !=  Infinity) {
+        myNumber = myNumber * myNumber;
+        txt = txt + myNumber + "<br>";
+    }
+    document.getElementById("infinity").innerHTML = txt;
+</script>
+
+<!-------------------JS Number method--------------------->
+<p>*************************JS Number Method**********************************</p>
+
+
+<p id="toStr"></p>
+<p id="toExpo"></p>
+<p id="toFixed"></p>
+<p id="toPrecision"> </p>
+<p id="valueOf"></p>
+<script>
+    var num1 = 1234;
+    var num2 = 7.9445464;
+    document.getElementById('toStr').innerHTML="to String : "+num1+num1.toString();
+    document.getElementById('toExpo').innerHTML="to Exponintial : "+num1.toExponential();
+    document.getElementById('toFixed').innerHTML="to Fixed : "+ num2.toFixed(2);
+    document.getElementById('toPrecision').innerHTML="toPrecision : "+num2.toPrecision(1);
+    document.getElementById('valueOf').innerHTML="valued Of :  "+num2.valueOf();
+</script>
+
+<p>******************Array********************</p>
+<p id="arr"></p>
+<p id="arrLen"></p>
+<p id="arrLoop"></p>
+<p id="join"></p>
+<button onclick="addCar()">Add Car</button>
+<p id="addCars"></p>
+<button onclick="popCar()">Remove</button>
+<p id="popCars"> </p>
+<button onclick="shiftElement()">Shift element</button>
+<p id="shift"></p>
+
+<button onclick="unShift()">Unshift</button>
+<p id="unshift"></p>
+
+<button onclick="sortArray()">Sort Array</button>
+<p id="sort"></p>
+
+<p id="map"></p>
+<p id="filter"></p>
+
+<script>
+    var cars = ["Saab", "Volvo", "BMW","Benz","lamborgini"];
+    var num = [40,1,5,10,12,45]
+    cars[0] = "ODi";
+    document.getElementById("arr").innerHTML = cars;
+    document.getElementById('arrLen').innerHTML=cars.length;
+    function addCar() {
+        cars.push("Jagwar");
+        document.getElementById('addCars').innerHTML=cars;
+        document.getElementById('arrLen').innerHTML=cars.length;
+    }
+    document.getElementById('arrLen').innerHTML=cars.length;
+    document.getElementById('addCars').innerHTML=cars
+
+    document.getElementById('join').innerHTML=cars.join("_");
+    function popCar() {
+        cars.pop();
+        document.getElementById('popCars').innerHTML=cars;
+    }
+
+    function shiftElement() {
+        cars.shift();
+        document.getElementById('shift').innerHTML=cars;
+    }
+    function unShift() {
+        cars.unshift("tavera");
+        document.getElementById('unshift').innerHTML=cars;
+    }
+
+    function sortArray() {
+        cars.sort();
+        cars.reverse();
+        document.getElementById('sort').innerHTML=cars;
+    }
+    function sortNumArray() {
+        points.sort(function(a ,b){return(a-b)});
+        points.reverse();
+        document.getElementById('sort').innerHTML=points;
+    }
+//    *******************Array Iteration
+    var num2 = num.map(myFunction);
+    document.getElementById("map").innerHTML = num2;
+    function myFunction(value, index, array) {
+        return value * 2;
+    }
+    var num2 = num.filter(myFilter);
+    document.getElementById('filter').innerHTML=num2;
+    function myFilter(value, index, array) {
+        return value >20;
+    }
+
+</script>
+
+<!--***********Cindition***************-->
+<p>********************Condition******************</p>
+<p id="condition"></p>
+<button onclick="myCondition()">Check Condition</button>
+
+<script>
+    function myCondition() {
+        var greeting;
+        var time = new Date().getHours();
+        if (time < 10) {
+            greeting = "Good morning";
+        } else if (time < 20) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        document.getElementById("condition").innerHTML = greeting;
+    }
+</script>
+<p>**************Switch *******</p>
+<p id="switch"></p>
+
+<script>
+    var x = "0";
+
+    switch (x) {
+        case 0:
+            text = "Off";
+            break;
+        case 1:
+            text = "On";
+            break;
+        default:
+            text = "No value found";
+    }
+    document.getElementById("switch").innerHTML = text;
+</script>
+
+<!----------------Type Conversion-->
+<p>******************Type Conversion*******************</p>
+<p id="numToString"></p>
+<script>
+    var num = 123;
+    document.getElementById('numToString').innerHTML=String(num)+"<br>"+String(123)+"<br>"+String(100+23);
+</script>
+
+
+<!---------------Bitwise Operator--------------->
+<p>**********************Bitwise Operator****************************</p>
+<p id="bitwiseAND"></p>
+<p id="bitwiseOR"></p>
+<p id="bitwiseXOR"> </p>
+<p id="bitwiseNOT"></p>
+<p id="bitwiseLEFT"></p>
+<p id="bitwiseRIGHT"></p>
+
+<p id="decToBin"></p>
+<p id="binToDec"></p>
+<script>
+    document.getElementById("bitwiseAND").innerHTML= 5 & 1 ;
+    document.getElementById("bitwiseOR").innerHTML = 5 | 1;
+    document.getElementById("bitwiseXOR").innerHTML = 5 ^ 2;
+    document.getElementById("bitwiseNOT").innerHTML = ~5;
+    document.getElementById('bitwiseLEFT').innerHTML = 5<<1;
+    document.getElementById("bitwiseRIGHT").innerHTML = 5>>1;
+
+    document.getElementById("decToBin").innerHTML = dec2bin(15);
+    function dec2bin(dec) {
+        return (dec >>> 0).toString(2);
+    }
+
+    document.getElementById("binToDec").innerHTML = bin2dec(1111);
+    function bin2dec(bin){
+        return parseInt(bin, 2).toString(10);
+    }
+</script>
+<p>*************JS RegEx*****************</p>
+<p id="regEx"></p>
+<script>
+    var str = "Lorem ipsum Dolor sit amet, consectetur adipisicing elit.";
+    var find = str.search(/dolor/i);
+    document.getElementById('regEx').innerHTML= find;
+
+</script>
+<p id="testFunction"></p>
+<p id="sampleText">Search Z in this sentence</p>
+<p id="exec"> </p>
+<script>
+   text = document.getElementById('sampleText').innerHTML;
+   document.getElementById('testFunction').innerHTML=/z/i.test(text);
+
+   var obj = /p/.exec("Lorem ipsum Dolor sit amet, consectetur adipisicing elit.");
+   document.getElementById("exec").innerHTML = "Found '" + obj[0] + "' in position " + obj.index + " in the text: " + obj.input;
+
+</script>
+
+<p>***************Errors***************</p>
+<p>Please input a number between 5 and 10:</p>
+
+<input id="sample" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+
+<p id="tryCatch"></p>
+<p id="rangeError"></p>
+<p id="refranceError"></p>
+<p id="syntax"></p>
+<p id="type"></p>
+
+<script>
+    function myFunction() {
+        var message, x;
+        message = document.getElementById("tryCatch");
+        message.innerHTML = "";
+        x = document.getElementById("sample").value;
+        try {
+            if(x == "")  throw "is empty";
+            if(isNaN(x)) throw "is not a number";
+            x = Number(x);
+            if(x > 10)   throw "is too high";
+            if(x < 5)  throw "is too low";
+        }
+        catch(err) {
+            message.innerHTML = "Input " + err;
+        }
+        finally {
+            document.getElementById("sample").value = "";
+        }
+    }
+
+
+
+    //*********Error Types Range
+    var num = 1;
+    try {
+        num.toPrecision(500);
+    }
+    catch(err) {
+        document.getElementById("rangeError").innerHTML = err.name;
+    }
+    //***********Error type referenced (NOt Declare)
+    var z;
+    try {
+        z = y + 1;
+        document.getElementById('refranceError').innerHTML=z;
+    }
+    catch(err) {
+        document.getElementById("refranceError").innerHTML = err.name;
+    }
+    //*******************Error Type Syntax Error
+    try {
+        eval("alert('This is Alert)");   // Missing ' will produce an error
+    }
+    catch(err) {
+        document.getElementById("syntax").innerHTML = err.name;
+    }
+
+    //**************Type Casting Error
+    var num = 1;
+    try {
+        num.toUpperCase();
+    }
+    catch(err) {
+        document.getElementById("type").innerHTML = err.name;
+    }
+</script>
+<!------------------Hoisting-->
+<p>***********************JS Hoisting****************</p>
+<p id="hoist"></p>
+<script>
+    x=5;
+    document.getElementById('hoist').innerHTML="Use x before declaring : "+x;
+    var x;
+</script>
+<p>***************Strict Mode**************</p>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+    "use strict";
+    myFunction();
+
+    function myFunction() {
+        y = 3.14;
+    }
+</script>
+
+<p>*****************<b>this</b> refers to the window Object:******</p>
+
+<p id="this"></p>
+
+<script>
+    var x = this;
+    document.getElementById("this").innerHTML = x;
+</script>
+<p>****Strict <b>this</b> Keyword****</p>
+<p id="thisStrict"></p>
+
+<script>
+    "use strict";
+    document.getElementById("thisStrict").innerHTML = myFunction();
+    function myFunction() {
+        return this;
+    }
+</script>
+<p>**************let ***********</p>
+<p id="old"></p>
+<p id="reDeclare"></p>
+<p id="usingLet"></p>
+<p id="afterRedeclare"></p>
+<script>
+    var x= 10;
+    document.getElementById('old').innerText=x;
+    {
+        x=20
+        document.getElementById('reDeclare').innerHTML=x;
+    }
+    {
+        let x= 25;
+        document.getElementById('usingLet').innerHTML=x;
+    }
+    document.getElementById('afterRedeclare').innerText=x;
+</script>
+<p>***********const **************</p>
+<p id="const"></p>
+<p id="constArrayOld"></p>
+<p id="constArrayNew"></p>
+
+<script>
+    try {
+        const PI = 3.141592653589793;
+        PI = 3.14;
+    }
+    catch (err) {
+        document.getElementById("const").innerHTML = err;
+    }
+
+    //*******const array can change
+    const student = ["prashant","pradeep","raj"];
+    document.getElementById("constArrayOld").innerHTML="Before change : "+student;
+    student[1] =  "Pradip";
+    student.push("Pankaj");
+    document.getElementById("constArrayNew").innerHTML="After change : "+student;
+</script>
+
+<p>************* JS Debugging************</p>
+<p id="debugger"></p>
+<script>
+    a = 10;
+    b = 6;
+    c = a + b;
+    console.log(c);
+
+    var x = 15 + 5;
+    debugger;
+    document.getElementById("debugger").innerHTML = "After Dubuger : "+x;
+</script>
+
+<p>************Best Practices</p>
+<p id="practice"></p>
+
+<script>
+    var x1 = {};
+    var x2 = "";
+    var x3 = 0;
+    var x4 = false;
+    var x5 = [];
+    var x6 = /()/;
+    var x7 = function(){};
+
+    document.getElementById("practice").innerHTML =
+        "x1: " + typeof x1 + "<br>" +
+        "x2: " + typeof x2 + "<br>" +
+        "x3: " + typeof x3 + "<br>" +
+        "x4: " + typeof x4 + "<br>" +
+        "x5: " + typeof x5 + "<br>" +
+        "x6: " + typeof x6 + "<br>" +
+        "x7: " + typeof x7 + "<br>";
+</script>
+
+<p>*************** Misunderstanding Floats ******************</p>
+<p id="floatProblem"></p>
+<p id="floatSolve"></p>
+
+<script>
+    var x = 0.1;
+    var y = 0.2;
+    z = x+y;
+    document.getElementById("floatProblem").innerHTML="Misunderstands Floats ; "+z;
+    z=(x*10+y*10)/10;
+    document.getElementById("floatSolve").innerHTML="Solve : "+z;
+
+</script>
+<p>**************ES 5************************</p>
+
+
+<p>**************ES 6************************</p>
+<p>*********New No Properties</p>
+<p id="exponentiation"></p>
+<p id="epsilon"></p>
+<p id="minSafe"></p>
+<p id="maxSafe"></p>
+<p>**********Is Interger</p>
+<p id="isInterger"></p>
+<p id="isSafeInteger"></p>
+
+<script>
+    var x = 5;
+    document.getElementById("exponentiation").innerHTML = x ** 2;
+    var  epsi = Number.EPSILON;
+    document.getElementById("epsilon").innerHTML = epsi;
+    var minSafeInt = Number.MIN_SAFE_INTEGER;
+    document.getElementById('minSafe').innerHTML = minSafeInt;
+    var maxSafeInt = Number.MAX_SAFE_INTEGER;
+    document.getElementById('maxSafe').innerHTML = maxSafeInt;
+    // is interger
+    document.getElementById("isInterger").innerHTML = Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+
+    document.getElementById("isSafeInteger").innerHTML = Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(12345678901234567890);
+
+</script>
+<p>****************JSON************************</p>
+<p id="json"></p>
+
+<script>
+    var text = '{"employees":[' +
+        '{"firstName":"Prashant","lastName":"Ghodeswar" },' +
+        '{"firstName":"Pradip","lastName":"Ghodeswar" },' +
+        '{"firstName":"Vinod","lastName":"Pawar" }]}';
+
+    obj = JSON.parse(text);
+    document.getElementById("json").innerHTML =
+        obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+<p>********************</p>
+<p id="screenWidth"></p>
+<p id="screenHeight"></p>
+<p id="availableWidth"></p>
+<p id="availableHeight"></p>
+<p>**************Location</p>
+<p id="url"></p>
+<p id="hostname"></p>
+<p id="pathname"></p>
+<p id="protocol"></p>
+<p id="assign"></p>
+<input type="button" value="Load new document" onclick="newAssign()">
+<p>*************History</p>
+<input type="button" value="Back" onclick="goBack()">
+<input type="button" value="forword" onclick="goForward()">
+
+<p id="appName"></p>
+<p id="appCodeName"></p>
+
+
+
+<script>
+    document.getElementById("screenHeight").innerHTML ="Screen Height is " + screen.height;
+    document.getElementById("screenWidth").innerHTML ="Screen width is " + screen.width;
+    document.getElementById("availableWidth").innerHTML ="Screen width is " + screen.availWidth;
+    document.getElementById("availableHeight").innerHTML ="Screen width is " + screen.availHeight;
+
+    document.getElementById("url").innerHTML ="  URL of page is: " + window.location.href;
+    document.getElementById("hostname").innerHTML ="  URL of page is: " + window.location.hostname;
+    document.getElementById("pathname").innerHTML ="  URL of page is: " + window.location.pathname;
+    document.getElementById("protocol").innerHTML ="  URL of page is: " + window.location.protocol;
+    function newAssign() {
+        document.getElementById("assign").innerHTML ="  URL of page is: " + window.location.assign("https://www.google.com");
+    }
+    function goForward() {
+        window.history.forward()
+    }
+    function goBack() {
+        window.history.back()
+    }
+    document.getElementById("appName").innerHTML ="appName is " + navigator.appName;
+    document.getElementById("appCodeName").innerHTML ="appCodeName is " + navigator.appCodeName;
+    
+
+
+</script>
+</body>
+</html>

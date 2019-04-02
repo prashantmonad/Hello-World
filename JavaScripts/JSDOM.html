@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<form id="frm1" action="JSDOM.html">
+    First name: <input type="text" name="fname" required><br>
+    Last name: <input type="text" name="lname" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+<button onclick="myFunction()">Check Elements</button>
+
+<p id="findElement"></p>
+
+<script>
+    function myFunction() {
+        var x = document.forms["frm1"];
+        var text = "";
+        var i;
+        for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("findElement").innerHTML = text;
+    }
+</script>
+<p>**************Change HTML Style ****</p>
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<h1 id="id1"> Heading 1</h1>
+<button type="button"
+        onclick="document.getElementById('id1').style.color = 'blue'">
+    change color!</button>
+<script>
+    document.getElementById("p2").style.color = "blue";
+    document.getElementById("p2").style.fontFamily = "Arial";
+    document.getElementById("p2").style.fontSize = "larger";
+
+</script>
+
+<p>***********Animation************</p>
+
+
+<p><button onclick="myMove()">Click For change</button></p>
+
+<div id ="container">
+    <div id ="animate"></div>
+</div>
+
+<script>
+    function myMove() {
+        var elem = document.getElementById("animate");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+</script>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+     style="background-color:red;width:140px;height:10px;padding:40px;">
+    Mouse Over Me</div>
+
+<script>
+    function mOver(obj) {
+        obj.innerHTML = "Thank You"
+    }
+
+    function mOut(obj) {
+        obj.innerHTML = "Mouse Over Me"
+    }
+    function mDown(obj) {
+        obj.style.backgroundColor = "blue";
+        obj.innerHTML = "Release Me";
+    }
+
+    function mUp(obj) {
+        obj.style.backgroundColor="red";
+        obj.innerHTML="Thank You";
+    }
+</script>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+     style="background-color:red;width:140px;height:10px;padding:40px;">
+    Click Me</div>
+<p>*************Events *********</p>
+<button id="myBtn">Try Events</button>
+
+<script>
+    document.getElementById("myBtn").addEventListener("click", function() {
+        alert("Hello World!");
+    });
+</script>
+<h1 id="parent">My First Page</h1>
+<p id="child"></p>
+
+<script>
+    document.getElementById("child").innerHTML = document.getElementById("parent").childNodes[0].nodeValue;
+</script>
+
+
+</body>
+</html>
