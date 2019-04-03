@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>JQuery</title>
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+
+<p id="jq1">Welcome to JQuery</p>
+<p id="jq2">This is First Page in JQuery</p>
+<p id="jqDelete">This is Deleted Element</p>
+
+<p class="jq1">This is class for JQuery</p>
+<p id="demo"></p>
+<p id="byTagname"></p>
+<p id="byClass"></p>
+<p id="selector"></p>
+<p>******DOM</p>
+<p id="parent"></p>
+<p>**********Starting******* </p>
+<h2>click me for hide</h2>
+<h2>Me also</h2>
+
+<!--<button >Click to hide paragraphs</button>-->
+
+<!--<h3 id="hideID"> H3 with ID click me for hide</h3>-->
+<!--<h3 class="hideClass">H3 with Class click me for hide</h3>-->
+<!--<h3 id="mouseEnter">H3 with mouse Overs </h3>-->
+<!--<h3 id="mouseLeave">H3 with mouse overLeave </h3>-->
+<!--<h3 id="mouseDown">H3 with mouse Right Click</h3>-->
+<!--<h3 id="mouseUp">H3 with mouse overLeaves</h3>-->
+
+<p>**********JQuery Effect********</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button class="toggle">Toggle</button>
+
+<h5>*********Fade***********</h5>
+<button class="btnStart"> Fade</button>
+<div id="div1" style="background-color: red;height: 100px ;width: 100px"></div>
+<br>
+<div id="div2" style="background-color: green;height: 100px ;width: 100px"></div>
+<br>
+<div id="div3" style="background-color: blue;height: 100px ;width: 100px"></div>
+<br>
+
+<h5>*******Flip**********</h5>
+<button class="stopBTN"> Stop</button>
+<div id="heading" class="w-5 bg-success" >Click here to expand</div>
+
+<div id="body"  class="bg-warning p-4"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum, illum in pariatur porro qui quia voluptatibus. Ad ducimus id ipsa ipsam minima neque non, pariatur provident quos similique sit.</p></div>
+
+<h5>******Animation******</h5>
+<button class="animateBTN">start animation</button>
+<div class="animation bg-success" style="height:100px;width:200px;">HELLO</div>
+
+<h5>**********Changing**********</h5>
+
+<p class="changeP">loremf</p>
+<button class="changeBTN" >Change</button>
+
+<h5>*****************JQuery HTMl************</h5>
+<h6>**********View Content</h6>
+<p id="test">This is  <b>HTML</b>  in a JQuery.</p>
+<button id="btnText">Show Text</button>
+<button id="btnHtml">Show HTML</button>
+
+<p>Name: <input type="text" id="testInput" ></p>
+
+<button class="btnCheckInput">Show Value</button>
+
+<h6>*********View Attr*******</h6>
+
+
+<p><a href="https://www.google.com" id="myLink">Google.com</a></p>
+
+<button class="attrBtn">Show href Value</button>
+<button class="setAttrBtn">Set New </button>
+
+<h5>**********Add*****</h5>
+<p id="add">This is a paragraph.</p>
+
+<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ol>
+<button id="btnApend1">Apepend text</button>
+<button id="btnApend2">Apepend list item</button>
+<button id="btnPrepend1">Prepend text</button>
+<button id="btnPrepend2">Prepend list item</button>
+
+
+<h5>******Set Css**********</h5>
+<p class="setCssForP" style="background-color:#ff0000">This is a paragraph.</p>
+<p class="setCssForP" style="background-color:#00ff00">This is a paragraph.</p>
+<p class="setCssForP" style="background-color:#0000ff">This is a paragraph.</p>
+
+<p class="setCssForP">This is a paragraph.</p>
+
+<button id="setCss">Set multiple styles for p</button>
+
+<h5>***********Traversing****</h5>
+<div class="ancestors">
+    <div style="width:500px;">div (great-grandparent)
+        <ul>ul (grandparent)
+            <li>li (direct parent)
+                <span>span</span>
+                <span>span</span>
+            </li>
+            <li>li (direct parent)
+                <span>span</span>
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width:500px;">div (grandparent)
+        <p>p (direct parent)
+            <span>span</span>
+        </p>
+    </div>
+</div>
+<h5>**********Jquery Ajax</h5>
+<div id="ajaxDiv"><h3>this is old Content</h3></div>
+<button class="ajaxBtn">Get Content</button>
+<button class="btnGET">GET Request</button>
+<button class="btnPOST">POST Rquest</button>
+<p>*************No Conflict</p>
+<button class="btnNoConflict">Test Conflict</button>
+<p class="noConflict">This is test Paragraph</p>
+
+
+<script>
+    $(document).ready(function () {
+        var myElementsId = $("#jq1");//byID
+        $("#demo").text("Text in Elements : " + myElementsId[0].innerHTML);
+
+        var myElements = $("p"); //ByTag
+        $("#byTagname").text("Tags are  :"+myElements[1].innerHTML);
+
+        var myClasses = document.getElementsByClassName("jq1");
+        $("#byClass").text("Classe are : "+myClasses[0].innerHTML);
+
+    });
+    $(document).ready(function() {
+        var myElements = $("p.jq1");
+        $("#selector").text("The Selectoer :  " + myElements[0].innerHTML);
+    });
+    // *******JQuery DOM
+    $(document).ready(function () {
+        $("#jqDelete").remove();
+    });
+
+    $(document).ready(function () {
+        var myParent = $("#jq1").parent();
+        $("#parent").text(myParent.prop("nodeName"));
+    })
+
+    $(document).ready(function () {
+        $("h2").click(function () {
+            $(this).hide();
+        })
+    })
+    $(document).ready(function () {
+       $("").click(function () {
+           $("p").hide();
+       })
+        $("#hideID").click(function () {
+            $(this).hide();
+        })
+
+        $(".hideClass").dblclick(function () {
+            $(this).hide();
+        })
+    });
+    $(document).ready(function () {
+        $("#mouseEnter").mouseenter(function () {
+            alert("This is hide element..");
+        })
+        $("#mouseLeave").mouseleave(function () {
+            alert("bye.....!");
+        })
+        $("#mouseDown").mousedown(function(){
+            alert("Mouse down over p1!");
+        });
+        $("#mouseUp").mouseup(function(){
+            alert("Mouse up over p1!");
+        });
+    })
+    ///////////JQuery Effect
+
+    $(document).ready(function () {
+        $("#hide").click(function () {
+            $("p").hide(function () {
+                alert("The paragraph is now hidden");
+            });
+        })
+        $("#show").click(function () {
+            $("p").show();
+        })
+    })
+    $(document).ready(function(){
+        $(".toggle").click(function(){
+            $("p").toggle();
+        });
+    });
+    //**********fade********
+
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(3000);
+        });
+    });
+
+    //*******Flip
+    $(document).ready(function(){
+        $("#heading").click(function(){
+            $("#body").slideToggle(5000);
+        });
+        $(".stopBTN").click(function(){
+            $("#body").stop();
+        });
+    });
+    //*****animation
+    $(document).ready(function(){
+        $(".animateBTN").click(function(){
+            var div = $(".animation");
+            div.animate({left: '100px'}, "slow");
+            div.animate({fontSize: '3em'}, "slow");
+        });
+    });
+    //********Chinging*********
+    $(document).ready(function(){
+        $(".changeBTN").click(function(){
+            $(".changeP").css("color", "red")
+                .slideUp(2000)
+                .slideDown(2000);
+        });
+    });
+
+    //**********JQueary HTML
+    $(document).ready(function(){
+        $("#btnText").click(function(){
+            alert("Text: " + $("#test").text());
+        });
+        $("#btnHtml").click(function(){
+            alert("HTML: " + $("#test").html());
+        });
+
+        $(".btnCheckInput").click(function(){
+            alert("Value: " + $("#testInput").val());
+        });
+    });
+    //*********Get Attr
+    $(document).ready(function(){
+        $(".attrBtn").click(function(){
+            alert($("#myLink").attr("href"));
+        });
+    });
+    //Set Attr
+    $(document).ready(function(){
+        $(".setAttrBtn").click(function(){
+            $("#myLink").attr({
+                "href" : "https://www.google.com/jquery/",
+                "title" : "Google JQuery page"
+            });
+        });
+    });
+
+    //******Append
+    $(document).ready(function(){
+        $("#btnApend1").click(function(){
+            $("#add").append(" <b>Appended text</b>.");
+        });
+
+        $("#btnApend2").click(function(){
+            $("ol").append("<li>Appended item</li>");
+        });
+        $("#btnPrepend1").click(function(){
+            $("#add").prepend(" <b>Prended text</b>.");
+        });
+
+        $("#btnPrepend2").click(function(){
+            $("ol").prepend("<li>Prended item</li>");
+        });
+    });
+
+    //****CSS
+    $(document).ready(function(){
+        $("#setCss").click(function(){
+            $(".setCssForP").css({"background-color": "lightblue", "font-size": "28px"});
+        });
+    });
+    //********Selector
+    $(document).ready(function(){
+        $("span").siblings().css({"color": "red", "border": "2px solid red"});
+    });
+    //*************Jquery Ajax*****
+
+    $(document).ready(function () {
+        $(".ajaxBtn").click(function () {
+            $("#ajaxDiv").load("../JavaScripts/ajax_info.txt");
+        })
+    })
+    //get
+    $(document).ready(function(){
+        $(".btnGET").click(function(){
+            $.get("../JavaScripts/ajax_info.txt", function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    });
+
+    //**POST
+
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.post("ajax_info.asp",
+                {
+                    name: "Donald Duck",
+                    city: "Duckburg"
+                },
+                function(data,status){
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+        });
+    });
+    //*****NO Conflict
+    $.noConflict();
+    jQuery(document).ready(function($){
+        $(".btnNoConflict").click(function(){
+            $(".noConflict").text("jQuery is still working!");
+        });
+    });
+    //********Filter
+    $(document).ready(function(){
+        $("#mySearch").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#divSearch *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+<input id="mySearch" type="text" placeholder="Search..">
+
+<div id="divSearch">
+    <p>I am a paragraph.</p>
+    <div>I am a div element inside div.</div>
+    <button>I am a button</button>
+    <button>Another button</button>
+    <p>Another paragraph.</p>
+</div>
+
+</body>
+</html>
