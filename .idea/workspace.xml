@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dc72ae5-0a75-4d1f-a8f4-8c00eeacc914" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/JQuery/JQuery.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JQuery/ajaxJQuery.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JQuery/ajax_info.asp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScripts/AJAX.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScripts/ajax_info.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScripts/catlog.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScripts/getHint.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Vue.js/StartVue.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Vue.js/StartVueJS.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Vue.js/sample.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Vue.js/style.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/JQuery/ajaxJQuery.html" afterPath="$PROJECT_DIR$/JQuery/ajaxJQuery.html" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/JavaSctiptsTutorial.html" afterPath="$PROJECT_DIR$/JavaScripts/JavaSctiptsTutorial.html" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/myScript.js" afterPath="$PROJECT_DIR$/JavaScripts/myScript.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,51 +20,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AJAX.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScripts/AJAX.html">
+      <file leaf-file-name="StartVueJS.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue.js/StartVueJS.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="629">
+              <caret line="173" column="37" lean-forward="true" selection-start-line="173" selection-start-column="37" selection-end-line="173" selection-end-column="37" />
+              <folding>
+                <marker date="1554472836180" expanded="true" signature="3410:3502" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartVue.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vue.js/StartVue.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getHint.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScripts/getHint.php">
+      <file leaf-file-name="myScript.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScripts/myScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="54">
+              <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catlog.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScripts/catlog.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajax_info.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScripts/ajax_info.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JQuery.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JQuery.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JQuery/JQuery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="350" column="62" lean-forward="true" selection-start-line="350" selection-start-column="62" selection-end-line="350" selection-end-column="62" />
+            <state relative-caret-position="180">
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -80,31 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_info.asp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JQuery/ajax_info.asp">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue.js/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxJQuery.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JQuery/ajaxJQuery.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="california.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teaching/california.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,16 +87,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>right</find>
-      <find>grade</find>
       <find>sens</find>
       <find>conte</find>
       <find>margin</find>
@@ -153,6 +124,8 @@
       <find>show</find>
       <find>button</find>
       <find>para</find>
+      <find>new</find>
+      <find>start</find>
     </findStrings>
     <replaceStrings>
       <replace>skyblue</replace>
@@ -164,10 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/EndCSS.css" />
-        <option value="$PROJECT_DIR$/html/EndCSS.html" />
-        <option value="$PROJECT_DIR$/html/CSS Advanced.html" />
-        <option value="$PROJECT_DIR$/html/CSSAdvance.css" />
         <option value="$PROJECT_DIR$/html/GridCSS.html" />
         <option value="$PROJECT_DIR$/html/StartBootstrap.html" />
         <option value="$PROJECT_DIR$/html/ScrollSpy.html" />
@@ -201,20 +170,24 @@
         <option value="$PROJECT_DIR$/Mockup/Mock.html" />
         <option value="$PROJECT_DIR$/teaching/styleCal.css" />
         <option value="$PROJECT_DIR$/teaching/california.html" />
-        <option value="$PROJECT_DIR$/JavaScripts/myScript.js" />
         <option value="$PROJECT_DIR$/JavaScripts/JavaSctiptsStart.html" />
         <option value="$PROJECT_DIR$/JavaScripts/JSForms.html" />
         <option value="$PROJECT_DIR$/JavaScripts/JSObjects.html" />
         <option value="$PROJECT_DIR$/JavaScripts/JSFunction.html" />
         <option value="$PROJECT_DIR$/JavaScripts/JSDOM.html" />
-        <option value="$PROJECT_DIR$/JavaScripts/JavaSctiptsTutorial.html" />
         <option value="$PROJECT_DIR$/JavaScripts/ajax_info.txt" />
         <option value="$PROJECT_DIR$/JavaScripts/catlog.xml" />
         <option value="$PROJECT_DIR$/JavaScripts/getHint.php" />
         <option value="$PROJECT_DIR$/JavaScripts/AJAX.html" />
-        <option value="$PROJECT_DIR$/JQuery/ajaxJQuery.html" />
         <option value="$PROJECT_DIR$/JQuery/ajax_info.asp" />
         <option value="$PROJECT_DIR$/JQuery/JQuery.html" />
+        <option value="$PROJECT_DIR$/JQuery/ajaxJQuery.html" />
+        <option value="$PROJECT_DIR$/Vue.js/sample.vue" />
+        <option value="$PROJECT_DIR$/Vue.js/style.css" />
+        <option value="$PROJECT_DIR$/JavaScripts/myScript.js" />
+        <option value="$PROJECT_DIR$/JavaScripts/JavaSctiptsTutorial.html" />
+        <option value="$PROJECT_DIR$/Vue.js/StartVue.js" />
+        <option value="$PROJECT_DIR$/Vue.js/StartVueJS.html" />
       </list>
     </option>
   </component>
@@ -269,14 +242,14 @@
             <path>
               <item name="Prashant_Training" type="b2602c69:ProjectViewProjectNode" />
               <item name="Prashant_Training" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="teaching" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue.js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,26 +281,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.JQuery.html">
+  <component name="RunManager" selected="JavaScript Debug.StartVueJS.html">
     <configuration name="AJAX.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/JavaScripts/AJAX.html" />
     <configuration name="JQuery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/JQuery/JQuery.html" />
-    <configuration name="JSDOM.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/JavaScripts/JSDOM.html" />
-    <configuration name="JSFunction.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/JavaScripts/JSFunction.html" />
     <configuration name="JavaSctiptsTutorial.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/JavaScripts/JavaSctiptsTutorial.html" />
+    <configuration name="StartVueJS.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/Vue.js/StartVueJS.html" />
+    <configuration name="ajaxJQuery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Prashant_Training/JQuery/ajaxJQuery.html" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.JavaSctiptsTutorial.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.JSFunction.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.JSDOM.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.AJAX.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.JQuery.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.AJAX.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.JQuery.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ajaxJQuery.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.StartVueJS.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.JQuery.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.AJAX.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.JavaSctiptsTutorial.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.JSDOM.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.JSFunction.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.StartVueJS.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.JavaSctiptsTutorial.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ajaxJQuery.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.JQuery.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.AJAX.html" />
       </list>
     </recent_temporary>
   </component>
@@ -379,28 +352,32 @@
       <workItem from="1554113810027" duration="11287000" />
       <workItem from="1554178116450" duration="30582000" />
       <workItem from="1554264496820" duration="31145000" />
+      <workItem from="1554350712282" duration="9265000" />
+      <workItem from="1554362248155" duration="12340000" />
+      <workItem from="1554439456412" duration="5614000" />
+      <workItem from="1554461049363" duration="9217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="840632000" />
+    <option name="totallyTimeSpent" value="877068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="354" y="18" width="1865" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13902308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14975846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -421,28 +398,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/HTMLMedia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mockup/Design.html" />
-    <entry file="file://$PROJECT_DIR$/html/StyleHtml5.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/CSS Advanced.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
@@ -601,19 +556,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env.docker" />
-    <entry file="file://$PROJECT_DIR$/JavaScripts/myScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScripts/JSObjects.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,28 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1638">
           <caret line="91" column="57" lean-forward="false" selection-start-line="91" selection-start-column="57" selection-end-line="91" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScripts/JSDOM.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="120" column="34" lean-forward="false" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScripts/JavaSctiptsTutorial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="739" column="5" lean-forward="true" selection-start-line="739" selection-start-column="5" selection-end-line="739" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#img#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,46 +581,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="95" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teaching/california.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
+        <state relative-caret-position="342">
           <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScripts/getHint.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScripts/AJAX.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScripts/catlog.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScripts/ajax_info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -705,8 +609,7 @@
     <entry file="file://$PROJECT_DIR$/JQuery/ajaxJQuery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -714,14 +617,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScripts/ajax_info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue.js/sample.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue.js/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScripts/AJAX.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScripts/JSDOM.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="120" column="34" lean-forward="false" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JQuery/JQuery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="350" column="62" lean-forward="true" selection-start-line="350" selection-start-column="62" selection-end-line="350" selection-end-column="62" />
+        <state relative-caret-position="180">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -733,6 +671,42 @@
             <element signature="n#style#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScripts/JavaSctiptsTutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScripts/myScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue.js/StartVueJS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="173" column="37" lean-forward="true" selection-start-line="173" selection-start-column="37" selection-end-line="173" selection-end-column="37" />
+          <folding>
+            <marker date="1554472836180" expanded="true" signature="3410:3502" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue.js/StartVue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

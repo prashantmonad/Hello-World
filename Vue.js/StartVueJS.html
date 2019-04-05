@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    {{message}}
+</div>
+<div id="app-3">
+    <span v-if="seen">Now you see me</span>
+</div>
+<div id="app-5">
+    <p>{{ message }}</p>
+    <input type="text" v-model="message">
+    <button v-on:click="reverseMessage">Reverse</button>
+</div>
+
+<div id="app-7">
+    <ol>
+        <!--
+          Now we provide each todo-item with the todo object
+          it's representing, so that its content can be dynamic.
+          We also need to provide each component with a "key",
+          which will be explained later.
+        -->
+        <todo-item
+                v-for="item in groceryList"
+                v-bind:todo="item"
+                v-bind:key="item.id">
+        </todo-item>
+    </ol>
+</div>
+
+<p>* *********Watchers**********</p>
+<div id="watch-example">
+    <p>
+        Ask  a ys/NO question ?
+        <input type="text" v-model="question">
+    </p>
+    <p>{{ answer }}</p>
+</div>
+
+<p>**************</p>
+<templete v-if="loginType==='username'">
+    <label >Username</label>
+    <input type="text" placeholder="Enter username">
+</templete>
+<templete v-else>
+    <label >Email</label>
+    <input type="text" placeholder="Enter Enail..">
+</templete>
+<p>*******List rendering*****</p>
+<ul id="item-list">
+    <li v-for="item in items">
+        {{ parentMessage }} - {{ index }} - {{item.name}}
+    </li>
+</ul>
+<p>**********to-do list Component***</p>
+<div id="todo-list-example">
+    <form v-on:submit.prevent="addNewTodo">
+        <label for="new-todo">Add a todo</label>
+        <input
+                v-model="newTodoText"
+                id="new-todo"
+                placeholder="E.g. Feed the cat"
+        >
+        <button>Add</button>
+    </form>
+    <ul>
+        <li
+                is="todo-item"
+                v-for="(todo, index) in todos"
+                v-bind:key="todo.id"
+                v-bind:title="todo.title"
+                v-on:remove="todos.splice(index, 1)"
+        ></li>
+    </ul>
+</div>
+<p>***********Events******</p>
+<div id="eventExample">
+    <button v-on:click="counter += 1">Add 1</button>
+    <p> You clicked {{counter}} times.</p>
+</div>
+
+<div id="eventAlert">
+    <button v-on:click="greet">Click for Alert</button>
+</div>
+
+<script>
+    var eventExample1 = new Vue({
+        el: '#eventExample',
+        data:{
+            counter :0
+        }
+    })
+    //**********Alert
+    var eventAlertExample = new Vue({
+        el: '#eventAlert',
+        data: {
+            name:'Vue.js'
+        },
+
+        methods: {
+            greet:function (event) {
+                alert('Hello'+this.name+'!')
+                if(event){
+                    alert(event.target.tagName)
+                }
+            }
+        }
+    })
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+<script>
+    var itemList = new Vue({
+        el: '#item-list',
+        data :{
+            parentMessage: 'Parent',
+            items:[
+                {name:'CPU'},
+                {name:'monitor'},
+                {name:'Keyboard'},
+                {name:'Mouse'}
+            ]
+        }
+    })
+</script>
+<script>
+    Vue.component('todo-item', {
+        template: '\
+    <li>\
+      {{ title }}\
+      <button v-on:click="$emit(\'remove\')">Remove</button>\
+    </li>\
+  ',
+        props: ['title']
+    })
+
+    new Vue({
+        el: '#todo-list-example',
+        data: {
+            newTodoText: '',
+            todos: [
+                {
+                    id: 1,
+                    title: 'Item 1',
+                },
+                {
+                    id: 2,
+                    title: 'Item 2',
+                },
+                {
+                    id: 3,
+                    title: 'Item 3'
+                }
+            ],
+            nextTodoId: 4
+        },
+        methods: {
+            addNewTodo: function () {
+                this.todos.push({
+                    id: this.nextTodoId++,
+                    title: this.newTodoText
+                })
+                this.newTodoText = ''
+            }
+        }
+    })
+</script>
+<script src="StartVue.js"></script>
+</body>
+</html>

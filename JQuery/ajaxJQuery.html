@@ -6,16 +6,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
-                $("#div1").load("demo_test.txt");
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
             });
         });
     </script>
 </head>
 <body>
+<input id="myInput" type="text" placeholder="Search keyword..">
 
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<div id="myDIV">
+    <p>I am a paragraph.</p>
+    <div>I am a div element inside div.</div>
+    <button>I am a button</button>
+    <button>Another button</button>
+    <p>Another paragraph.</p>
+</div>
 
-<button>Get External Content</button>
 </body>
 </html>
